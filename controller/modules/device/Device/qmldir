@@ -1,0 +1,3 @@
+module Device
+DeviceListView 0.1 DeviceListView.qml
+

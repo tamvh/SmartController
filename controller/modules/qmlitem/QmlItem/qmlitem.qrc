@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/QmlItem">
+        <file>FlatButton.qml</file>
+        <file>Line.qml</file>
+        <file>qmldir</file>
+        <file>RectangleEx.qml</file>
+        <file>SlidingButton.qml</file>
+        <file>SlidingView.qml</file>
+        <file>TextWithTitle.qml</file>
+        <file>Toast.qml</file>
+    </qresource>
+</RCC>

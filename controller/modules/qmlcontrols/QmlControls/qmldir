@@ -1,0 +1,20 @@
+module QmlControls
+NavigationBar 0.1 NavigationBar.qml
+NavigationView 0.1 NavigationView.qml
+NavigationItem 0.1 NavigationItem.qml
+BarButtonItem 0.1 BarButtonItem.qml
+NavigationBarTitleAttributes 0.1 NavigationBarTitleAttributes.qml
+WaitingHUD 0.1 WaitingHUD.qml
+AppDelegate 0.1 appdelegate.js
+ApplicationWindowEx 0.1 ApplicationWindowEx.qml
+FontImage 0.1 FontImage.qml
+Button 0.1 Button.qml
+ButtonBase 0.1 ButtonBase.qml
+DatePicker 0.1 DatePicker.qml
+TimePicker 0.1 TimePicker.qml
+DaysOfWeek 0.1 DaysOfWeek.qml
+DatePickerStyle 0.1 DatePickerStyle.qml
+SearchBox 0.1 SearchBox.qml
+SearchBoxStyle 0.1 SearchBoxStyle.qml
+ListViewEx 0.1 ListViewEx.qml
+

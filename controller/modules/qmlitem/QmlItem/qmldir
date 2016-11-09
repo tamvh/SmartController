@@ -1,0 +1,7 @@
+module QmlItem
+FlatButton 0.1 FlatButton.qml
+Line 0.1 Line.qml
+RectangleEx 0.1 RectangleEx.qml
+SlidingButton 0.1 SlidingButton.qml
+TextWithTitle 0.1 TextWithTitle.qml
+Toast 0.1 Toast.qml

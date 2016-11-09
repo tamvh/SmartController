@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/Device">
+        <file>qmldir</file>
+        <file>DeviceListView.qml</file>
+        <file>DeviceItem.qml</file>
+        <file>DeviceDetailView.qml</file>
+        <file>AddDeviceView.qml</file>
+        <file>EditDeviceView.qml</file>
+        <file>SelectIconPopup.qml</file>
+        <file>TextFieldStyle.qml</file>
+    </qresource>
+</RCC>

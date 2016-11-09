@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values-zh-rTW/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 185,
+                        "endColumn": 57,
+                        "endOffset": 238
+                    }
+                }
+            }
+        ]
+    }
+]

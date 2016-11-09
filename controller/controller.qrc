@@ -1,0 +1,106 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pages/MainPage.qml</file>
+        <file>qtquickcontrols2.conf</file>
+	<file>images/ic_power.png</file>
+	<file>images/light_type_1.png</file>
+	<file>images/light_type_2.png</file>
+	<file>images/light_type_2_on.png</file>
+	<file>images/light_type_2_off.png</file>
+	<file>images/navigation_previous_item.png</file>
+        <file>images/qrcodetest.png</file>
+        <file>images/check.png</file>
+        <file>images/repeat.png</file>
+        <file>images/bg_smarthome.png</file>
+        <file>images/ic_balance.png</file>
+        <file>images/clock.png</file>
+        <file>images/list.png</file>
+        <file>images/grid.png</file>
+        <file>images/background.png</file>
+        <file>images/brightnesscool.png</file>
+        <file>images/brightnesswarm.png</file>
+        <file>images/brightnessdesc.png</file>
+        <file>images/brightnessinc.png</file>
+        <file>images/nightlight.png</file>
+        <file>images/power.png</file>
+        <file>images/user.png</file>
+        <file>images/notification.png</file>
+        <file>images/icolight.png</file>
+        <file>images/ic_edit.png</file>
+        <file>images/ic_addgroup.png</file>
+        <file>images/ic_bedroom.png</file>
+        <file>images/ic_livingroom.png</file>
+        <file>images/ic_bathroom.png</file>
+        <file>images/ic_otherroom.png</file>
+        <file>images/ic_defaultroom.png</file>
+        <file>images/add.png</file>
+        <file>images/listmenu.png</file>
+        <file>images/btn_edit.png</file>
+        <file>images/btn_delete.png</file>
+        <file>images/btn_add.png</file>
+        <file>images/menu_add.png</file>
+        <file>images/menu_sync.png</file>
+        <file>images/menu_settings.png</file>
+        <file>images/menu_key.png</file>
+        <file>images/group.png</file>
+        <file>images/ic_lamp.png</file>
+        <file>images/goback.png</file>
+        <file>images/bluetooth.png</file>
+        <file>images/menu_listdevice.png</file>
+        <file>images/menu_dashboard.png</file>
+        <file>images/menu_qrcode.png</file>
+        <file>images/menu_search.png</file>
+        <file>images/arrow.png</file>
+        <file>images/arrow@2x.png</file>
+        <file>images/arrow@3x.png</file>
+        <file>images/arrow@4x.png</file>
+        <file>images/arrows.png</file>
+        <file>images/arrows@2x.png</file>
+        <file>images/arrows@3x.png</file>
+        <file>images/arrows@4x.png</file>
+        <file>images/drawer.png</file>
+        <file>images/drawer@2x.png</file>
+        <file>images/drawer@3x.png</file>
+        <file>images/drawer@4x.png</file>
+        <file>images/menu.png</file>
+        <file>images/+material/drawer.png</file>
+        <file>images/+material/drawer@2x.png</file>
+        <file>images/+material/drawer@3x.png</file>
+        <file>images/+material/drawer@4x.png</file>
+        <file>images/+material/menu.png</file>
+        <file>images/+material/menu@2x.png</file>
+        <file>images/+material/menu@3x.png</file>
+        <file>images/+material/menu@4x.png</file>
+        <file>images/qt-logo.png</file>
+        <file>images/qt-logo@2x.png</file>
+        <file>images/qt-logo@3x.png</file>
+        <file>images/qt-logo@4x.png</file>
+        <file>pages/ScanDevice.qml</file>
+        <file>pages/AddGroup.qml</file>
+        <file>pages/Groups.qml</file>
+        <file>pages/QRCode.qml</file>
+        <file>pages/SecurityKey.qml</file>
+        <file>pages/Setting.qml</file>
+        <file>pages/Sync.qml</file>
+        <file>pages/ListDevice.qml</file>
+        <file>pages/ControlDevice.qml</file>
+        <file>pages/Dashboard.qml</file>
+        <file>pages/DeviceDetailType1.qml</file>
+        <file>pages/Common.js</file>
+        <file alias="ic_launcher.png">src/resources/images/ic_launcher.png</file>
+        <file alias="ic_tick.png">src/resources/images/ic_tick.png</file>
+        <file>pages/AddDevice.qml</file>
+        <file>pages/Alarm.qml</file>
+        <file>pages/SetAlarm.qml</file>
+        <file>pages/Notification.qml</file>
+        <file>pages/Login.qml</file>
+        <file>pages/Constants.qml</file>
+        <file>pages/DeviceDetailType2.qml</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file alias="flaticon.ttf">src/fonts/Flaticon.ttf</file>
+        <file alias="MyriadPro-Bold.otf">src/fonts/MyriadPro-Bold.otf</file>
+        <file alias="MyriadPro-Light.otf">src/fonts/MyriadPro-Light.otf</file>
+        <file alias="MyriadPro-Regular.otf">src/fonts/MyriadPro-Regular.otf</file>
+    </qresource>
+</RCC>

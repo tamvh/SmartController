@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qmls/main.qml</file>
+        <file>qmls/js/flaticon.js</file>
+        <file>qmls/ChooseAlarm.qml</file>
+        <file>qmls/DeviceDetailView.qml</file>
+        <file>qmls/DeviceCalendarListView.qml</file>
+        <file>qmls/DeviceCalendarItem.qml</file>
+        <file>qmls/DeviceScanningView.qml</file>
+        <file>qmls/UpdateDeviceInfo.qml</file>
+        <file>qmls/MainPage.qml</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file alias="flaticon.ttf">fonts/Flaticon.ttf</file>
+        <file alias="MyriadPro-Bold.otf">fonts/MyriadPro-Bold.otf</file>
+        <file alias="MyriadPro-Light.otf">fonts/MyriadPro-Light.otf</file>
+        <file alias="MyriadPro-Regular.otf">fonts/MyriadPro-Regular.otf</file>
+    </qresource>
+    <qresource prefix="/qmls/images">
+        <file alias="ic_launcher.png">resources/images/ic_launcher.png</file>
+        <file alias="ic_tick.png">resources/images/ic_tick.png</file>
+    </qresource>
+</RCC>

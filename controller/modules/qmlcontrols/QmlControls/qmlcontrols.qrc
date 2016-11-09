@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/QmlControls">
+        <file>qmldir</file>
+        <file>NavigationBar.qml</file>
+        <file>NavigationView.qml</file>
+        <file>NavigationItem.qml</file>
+        <file>BarButtonItem.qml</file>
+        <file>NavigationBarTitleAttributes.qml</file>
+        <file>priv/NavigationViewTransition.qml</file>
+        <file>priv/NavigationBarItem.qml</file>
+        <file>priv/NavigationBarTransition.qml</file>
+        <file>priv/NavigationStack.qml</file>
+        <file>WaitingHUD.qml</file>
+        <file>ProgressHUD.qml</file>
+        <file>ApplicationWindowEx.qml</file>
+        <file>appdelegate.js</file>
+        <file>res.js</file>
+        <file>util.js</file>
+        <file>FontImage.qml</file>
+        <file>Button.qml</file>
+        <file>ButtonBase.qml</file>
+        <file>DataPicker.qml</file>
+        <file>DatePicker.qml</file>
+        <file>DatePickerStyle.qml</file>
+        <file>SearchBox.qml</file>
+        <file>SearchBoxStyle.qml</file>
+        <file>ListViewEx.qml</file>
+        <file>TimePicker.qml</file>
+        <file>DaysOfWeek.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_selector.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/messenger_button_blue_bg_selector.xml"
+    },
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/com_facebook_button_like_background.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_selector.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/messenger_button_white_bg_selector.xml"
+    },
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/messenger_button_blue_bg_round.xml"
+    },
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/com_facebook_button_background.xml"
+    },
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
+        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable/messenger_button_white_bg_round.xml"
+    }
+]

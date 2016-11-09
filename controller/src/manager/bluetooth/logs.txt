@@ -1,0 +1,161 @@
+W/libSmartLamp.so(13500): qrc:///qmls/MainPage.qml:72 ((null)): qrc:///qmls/MainPage.qml:72:5: QML Snackbar: Cannot specify left, right, and horizontalCenter anchors at the same time.D/libSmartLamp.so(13500): ../../SmartLamp/src/controller/devicelistcontroller.cpp:99 (void DeviceListController::changeBright(QString, int)): void DeviceListController::changeBright(QString, int) start, address: "F0:0C:F9:D3:A5:E4" , value: 30
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:36 (void DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)): Initialize device info
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:45 (void DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)): Create controller
+D/BluetoothAdapter(13500): getAddress
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:94 (void DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)): Connect to device
+D/BluetoothAdapter(13500): getName
+D/BluetoothAdapter(13500): getAddress
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:85 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda(QLowEnergyController::ControllerState)>): State changed:  QLowEnergyController::ControllerState(ConnectingState)
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): connect() - device: F0:0C:F9:D3:A5:E4, auto: false
+D/BluetoothGatt(13500): registerApp()
+D/BluetoothGatt(13500): registerApp() - UUID=5e004095-5b59-4c70-bd55-50e13e187afe
+D/BluetoothGatt(13500): onClientRegistered() - status=0 clientIf=1
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=10.59 dur=5097.15 max=4116.71 min=5.13
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=60.53 dur=1007.75 max=24.01 min=9.05
+D/BluetoothGatt(13500): onClientConnectionState() - status=0 clientIf=1 device=F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:85 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda(QLowEnergyController::ControllerState)>): State changed:  QLowEnergyController::ControllerState(ConnectedState)
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:50 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda()>): Connected
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:55 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda()>): Start discover
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:85 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda(QLowEnergyController::ControllerState)>): State changed:  QLowEnergyController::ControllerState(DiscoveringState)
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): discoverServices() - device: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.73 dur=1004.45 max=23.04 min=9.18
+D/BluetoothGatt(13500): onGetService() - Device=F0:0C:F9:D3:A5:E4 UUID=00001800-0000-1000-8000-00805f9b34fb
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetService() - Device=F0:0C:F9:D3:A5:E4 UUID=00001801-0000-1000-8000-00805f9b34fb
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetService() - Device=F0:0C:F9:D3:A5:E4 UUID=2b8e0000-f5fe-4f55-bc6f-d22beff29232
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetCharacteristic() - Device=F0:0C:F9:D3:A5:E4 UUID=00002a00-0000-1000-8000-00805f9b34fb srvcType=0 srvcInstId=0 charInstId=0 charProps=10
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetCharacteristic() - Device=F0:0C:F9:D3:A5:E4 UUID=00002a01-0000-1000-8000-00805f9b34fb srvcType=0 srvcInstId=0 charInstId=0 charProps=2
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetCharacteristic() - Device=F0:0C:F9:D3:A5:E4 UUID=00002a04-0000-1000-8000-00805f9b34fb srvcType=0 srvcInstId=0 charInstId=0 charProps=2
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetCharacteristic() - Device=F0:0C:F9:D3:A5:E4 UUID=2b8e0001-f5fe-4f55-bc6f-d22beff29232 srvcType=0 srvcInstId=0 charInstId=0 charProps=12
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetCharacteristic() - Device=F0:0C:F9:D3:A5:E4 UUID=2b8e0002-f5fe-4f55-bc6f-d22beff29232 srvcType=0 srvcInstId=0 charInstId=0 charProps=16
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetCharacteristic() - Device=F0:0C:F9:D3:A5:E4 UUID=2b8e0003-f5fe-4f55-bc6f-d22beff29232 srvcType=0 srvcInstId=0 charInstId=0 charProps=12
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onGetDescriptor() - Device=F0:0C:F9:D3:A5:E4 UUID=00002902-0000-1000-8000-00805f9b34fb srvcType=0 srvcInstId=0 charInstId=0descrInstId=0
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onSearchComplete() = Device=F0:0C:F9:D3:A5:E4 Status=0
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:62 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda(const QBluetoothUuid&)>): Service discovered:  "{00001800-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:100 (BluetoothService* DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)): Uuid:  "{00001800-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:107 (BluetoothService* DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)): Service not existed:  "{00001800-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:62 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda(const QBluetoothUuid&)>): Service discovered:  "{00001801-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:100 (BluetoothService* DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)): Uuid:  "{00001801-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:107 (BluetoothService* DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)): Service not existed:  "{00001801-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:62 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda(const QBluetoothUuid&)>): Service discovered:  "{2b8e0000-f5fe-4f55-bc6f-d22beff29232}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:100 (BluetoothService* DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)): Uuid:  "{2b8e0000-f5fe-4f55-bc6f-d22beff29232}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:107 (BluetoothService* DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)): Service not existed:  "{2b8e0000-f5fe-4f55-bc6f-d22beff29232}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:85 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda(QLowEnergyController::ControllerState)>): State changed:  QLowEnergyController::ControllerState(DiscoveredState)
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:71 (DeviceHardwareService::DeviceHardwareServicePrivate::connectToDevice(const QString&, DeviceHardwareService*)::<lambda()>): Discovery finished
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:34 (void BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)): Create service object
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:40 (void BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)): Connect to signals
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:75 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): State changed to:  QLowEnergyService::ServiceState(DiscoveringServices)
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): readCharacteristic() - uuid: 00002a00-0000-1000-8000-00805f9b34fb
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onCharacteristicRead() - Device=F0:0C:F9:D3:A5:E4 UUID=00002a00-0000-1000-8000-00805f9b34fb Status=0 srvcType=0 srvcInstId=0 charInstId=0
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): readCharacteristic() - uuid: 00002a01-0000-1000-8000-00805f9b34fb
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onCharacteristicRead() - Device=F0:0C:F9:D3:A5:E4 UUID=00002a01-0000-1000-8000-00805f9b34fb Status=0 srvcType=0 srvcInstId=0 charInstId=0
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): readCharacteristic() - uuid: 00002a04-0000-1000-8000-00805f9b34fb
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onCharacteristicRead() - Device=F0:0C:F9:D3:A5:E4 UUID=00002a04-0000-1000-8000-00805f9b34fb Status=0 srvcType=0 srvcInstId=0 charInstId=0
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:75 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): State changed to:  QLowEnergyService::ServiceState(ServiceDiscovered)
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:78 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): Emit discovered
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:113 (DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)::<lambda(BluetoothService*)>): Service discovered:  "{00001800-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:117 (DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)::<lambda(BluetoothService*)>): Discoverings 2
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:34 (void BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)): Create service object
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:40 (void BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)): Connect to signals
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:75 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): State changed to:  QLowEnergyService::ServiceState(DiscoveringServices)
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:75 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): State changed to:  QLowEnergyService::ServiceState(ServiceDiscovered)
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:78 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): Emit discovered
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:113 (DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)::<lambda(BluetoothService*)>): Service discovered:  "{00001801-0000-1000-8000-00805f9b34fb}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:117 (DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)::<lambda(BluetoothService*)>): Discoverings 1
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:34 (void BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)): Create service object
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:40 (void BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)): Connect to signals
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:75 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): State changed to:  QLowEnergyService::ServiceState(DiscoveringServices)
+D/QtBluetoothGatt(13500): Non-readable characteristic 2b8e0001-f5fe-4f55-bc6f-d22beff29232 for service 2b8e0000-f5fe-4f55-bc6f-d22beff29232
+D/QtBluetoothGatt(13500): Non-readable characteristic 2b8e0002-f5fe-4f55-bc6f-d22beff29232 for service 2b8e0000-f5fe-4f55-bc6f-d22beff29232
+D/BluetoothGatt(13500): readDescriptor() - uuid: 00002902-0000-1000-8000-00805f9b34fb
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothGatt(13500): onDescriptorRead() - Device=F0:0C:F9:D3:A5:E4 UUID=2b8e0002-f5fe-4f55-bc6f-d22beff29232 status=0 srvcType=0 srvcInstId=0 charInstId=0 descrInstId=0
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/QtBluetoothGatt(13500): Non-readable characteristic 2b8e0003-f5fe-4f55-bc6f-d22beff29232 for service 2b8e0000-f5fe-4f55-bc6f-d22beff29232
+W/QtBluetoothGatt(13500): Last entry of last service read
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/BluetoothDevice(13500): mAddress: F0:0C:F9:D3:A5:E4
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:75 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): State changed to:  QLowEnergyService::ServiceState(ServiceDiscovered)
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothservice.cpp:78 (BluetoothService::Private::discovery(QLowEnergyController&, BluetoothService*)::<lambda(QLowEnergyService::ServiceState)>): Emit discovered
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:113 (DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)::<lambda(BluetoothService*)>): Service discovered:  "{2b8e0000-f5fe-4f55-bc6f-d22beff29232}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:117 (DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)::<lambda(BluetoothService*)>): Discoverings 0
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/devicehardwareservice.cpp:125 (DeviceHardwareService::DeviceHardwareServicePrivate::createOrFind(const QString&)::<lambda(BluetoothService*)>): Initialized "{2b8e0000-f5fe-4f55-bc6f-d22beff29232}"
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothoperation.cpp:28 (bool BluetoothOperation::Private::execute(BluetoothOperation&, BluetoothOperation::Services&)): Execute operation
+D/libSmartLamp.so(13500): ../../SmartLamp/src/manager/bluetooth/bluetoothoperation.cpp:30 (bool BluetoothOperation::Private::execute(BluetoothOperation&, BluetoothOperation::Services&)): Service not found: "2åb8e0000-f5fe-4f55-bc6f-d22beff29232"
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=60.07 dur=1015.42 max=19.79 min=13.25
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.86 dur=1002.36 max=21.61 min=14.16
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.61 dur=1006.47 max=22.22 min=14.04
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.82 dur=1003.09 max=28.27 min=7.04
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=60.12 dur=1014.67 max=21.76 min=9.58
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.83 dur=1002.89 max=25.28 min=9.63
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.98 dur=1000.26 max=23.33 min=11.29
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.74 dur=1004.43 max=27.15 min=9.12
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=60.10 dur=1014.96 max=23.23 min=7.85
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.78 dur=1003.68 max=23.46 min=9.64
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=60.09 dur=1015.16 max=24.87 min=6.47
+I/BufferQueueProducer(  257): [SurfaceView](this:0x5573fe9f00,id:7202,api:1,p:13500,c:257) queueBuffer: fps=59.90 dur=1018.29 max=34.29 min=6.99
+D/ActivityThread(13500): ACT-AM_ON_PAUSE_CALLED ActivityRecord{cd68ad4 token=android.os.BinderProxy@99de47d {vn.com.vng.iot.splugs/org.qtproject.qt5.android.bindings.QtActivity}}
+D/ActivityThread(13500): ACT-PAUSE_ACTIVITY handled : 0 / android.os.BinderProxy@99de47d
+V/ActivityThread(13500): Finishing stop of ActivityRecord{cd68ad4 token=android.os.BinderProxy@99de47d {vn.com.vng.iot.splugs/org.qtproject.qt5.android.bindings.QtActivity}}: show=true win=com.android.internal.policy.impl.MiuiPhoneWindow@1deaaa26
+D/ActivityThread(13500): ACT-STOP_ACTIVITY_SHOW handled : 0 / android.os.BinderProxy@99de47d
+V/InputMethodManager(13500): START INPUT: com.android.internal.policy.impl.PhoneWindow$DecorView{2bb9cd2a V.E..... R....... 0,0-1080,1920} ic=null tba=android.view.inputmethod.EditorInfo@3ff33cae controlFlags=#100
+I/memtrack_graphic(  733): graphic_memtrack_get_memory match 4:      ion_mm_heap 13500  8355840   2 ffffffc005e1ac00 ffffffc00392b900.
+I/memtrack_graphic(  733):  : 13500 13500 8355840 2 4177920
+I/memtrack_graphic(  733): graphic_memtrack_get_memory match 4:      ion_mm_heap 13500  8097792   2 ffffffc041d5d8c0 ffffffc03ad7c700.
+I/memtrack_graphic(  733):  : 13500 13500 8097792 2 8226816
+I/memtrack_graphic(  733): graphic_memtrack_get_memory match 4:      ion_mm_heap 13500  8097792   2 ffffffc0148f9140 ffffffc041e2e300.
+I/memtrack_graphic(  733):  : 13500 13500 8097792 2 12275712
+I/memtrack_graphic(  733): graphic_memtrack_get_memory match 4:      ion_mm_heap 13500  8097792   2 ffffffc01d3805c0 ffffffc0421c8200.
+I/memtrack_graphic(  733):  : 13500 13500 8097792 2 16324608
