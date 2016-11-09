@@ -112,7 +112,7 @@ Page {
             color: "lightblue";
             Image {
                 id: icoLamp
-                source: "qrc:/images/light_type_2.png"
+                source: "qrc:/images/light_type_2_off.png"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 MouseArea {
