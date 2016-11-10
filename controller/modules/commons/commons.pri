@@ -29,7 +29,8 @@ SOURCES += \
     $$PWD/networks/core/networkerrorresponse.cpp \
     $$PWD/networks/core/networkmanager.cpp \
     $$PWD/networks/core/networkrequest.cpp \
-    $$PWD/networks/core/networkresponse.cpp
+    $$PWD/networks/core/networkresponse.cpp \
+    $$PWD/networks/core/httpclient.cpp
 
 HEADERS += \
     $$PWD/users/zuserinfo.h \
@@ -49,5 +50,6 @@ HEADERS += \
     $$PWD/networks/core/networkerrorresponse.h \
     $$PWD/networks/core/networkmanager.h \
     $$PWD/networks/core/networkrequest.h \
-    $$PWD/networks/core/networkresponse.h
+    $$PWD/networks/core/networkresponse.h \
+    $$PWD/networks/core/httpclient.h
 
