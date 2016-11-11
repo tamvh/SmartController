@@ -20,6 +20,7 @@
 #include "controller/devicescanningcontroller.h"
 #include "controller/groupcontroller.h"
 #include "controller/devicecontroller.h"
+#include "../commons/networks/core/httpclient.h"
 #include "QZXing.h"
 
 #include "applicationinfo.h"
@@ -66,6 +67,7 @@ public:
     std::shared_ptr<GroupManager> groupManager;
     std::shared_ptr<DeviceCalendarManager> deviceCalendarManager;
     std::shared_ptr<DeviceHardwareService> deviceHardwareService;
+    std::shared_ptr<HttpClient> httpClient;
     std::shared_ptr<QZXing> qZXing;
 };
 
@@ -83,6 +85,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent):
     d_ptr->deviceCalendarManager = std::shared_ptr<DeviceCalendarManager>(new DeviceCalendarManager());
     d_ptr->deviceHardwareService = std::shared_ptr<DeviceHardwareService>(new DeviceHardwareService());
     d_ptr->qZXing = std::shared_ptr<QZXing>(new QZXing());
+    d_ptr->httpClient = std::shared_ptr<HttpClient>(new HttpClient());
 }
 
 void ApplicationInfo::applicationStartup()
@@ -148,5 +151,9 @@ DeviceHardwareService* ApplicationInfo::deviceHardwareService() const
 QZXing* ApplicationInfo::qzxing() const
 {
     return d_ptr->qZXing.get();
+}
+
+HttpClient* ApplicationInfo::httclient() const {
+    return d_ptr->httpClient.get();
 }
 

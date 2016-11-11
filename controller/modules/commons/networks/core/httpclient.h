@@ -20,16 +20,22 @@ enum class HttpRequestMethod {
 class HttpClient
 {
 public:
-    HttpClient(const QString& host, int port);
+    HttpClient();
     virtual ~HttpClient();
 public:
+    void init(const QString& host, int port);
     void setRequestMethod(HttpRequestMethod requestMethod);
     void addPostItem(const QString &key, const QString &value);
-    void sendRequest(const std::string& api);
+    void sendRequest(const QString& api);
     QNetworkReply* replyData();
 private:
-    class Impl;
-    std::shared_ptr<Impl> d_ptr;
+    QByteArray _m_postData;
+    QNetworkReply *_repData;
+    QNetworkAccessManager *_mgr;
+    QNetworkRequest *_request;
+    HttpRequestMethod _method;
+    QString _host;
+    int _port;
 };
 
 #endif // HTTPCLIENT_H

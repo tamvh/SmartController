@@ -23,7 +23,9 @@ public slots:
     Q_INVOKABLE int controlDevice(const QString& remoteAddress, int value);
     QAbstractListModel* listDevice() const;
     QAbstractListModel* listDevice(const QString& groupName) const;
-
+private:
+    QByteArray m_postData;
+    void addPostItem(const QString &key, const QString &value);
 private:
     class Impl;
     QSharedPointer<Impl> d_ptr;

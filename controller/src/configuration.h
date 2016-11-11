@@ -10,6 +10,8 @@ namespace Configuration {
     extern QString updateTimeCharId;
     extern int TurnOffLamp;
     extern int TurnOnLamp;
+    extern QString hostServer;
+    extern int portServer;
 }
 
 #endif // CONFIGURATION_H

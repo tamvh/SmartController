@@ -10,6 +10,7 @@ class GroupManager;
 class DeviceCalendarManager;
 class DeviceHardwareService;
 class QZXing;
+class HttpClient;
 
 class GlobalHandle {
 public:
@@ -19,6 +20,7 @@ public:
     static DeviceCalendarManager* deviceCalendarManager();
     static DeviceHardwareService* deviceHardwareService();
     static QZXing * qzxing();
+    static HttpClient * httpClient();
 };
 
 #endif // APP_COMMONS_HEADER_GUARD

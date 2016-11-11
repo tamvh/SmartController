@@ -18,6 +18,7 @@ QString getCurrentUserSession() {
 DeviceManager *GlobalHandle::deviceManager() {
     return ApplicationInfo::instance()->deviceManager();
 }
+
 GroupManager *GlobalHandle::groupManager() {
     return ApplicationInfo::instance()->groupManager();
 }
@@ -30,6 +31,11 @@ DeviceHardwareService *GlobalHandle::deviceHardwareService()
 {
     return ApplicationInfo::instance()->deviceHardwareService();
 }
+
 QZXing *GlobalHandle::qzxing() {
     return ApplicationInfo::instance()->qzxing();
+}
+
+HttpClient *GlobalHandle::httpClient() {
+    return ApplicationInfo::instance()->httclient();
 }

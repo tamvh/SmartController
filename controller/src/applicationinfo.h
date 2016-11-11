@@ -13,6 +13,7 @@ class GroupManager;
 class DeviceCalendarManager;
 class DeviceHardwareService;
 class QZXing;
+class HttpClient;
 
 class ApplicationInfo : public QObject
 {
@@ -31,6 +32,7 @@ public:
     DeviceCalendarManager* deviceCalendarManager() const;
     DeviceHardwareService* deviceHardwareService() const;
     QZXing* qzxing() const;
+    HttpClient* httclient() const;
 private:
     static ApplicationInfo *self;
     struct ApplicationInfoPrivate;
