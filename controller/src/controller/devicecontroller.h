@@ -7,6 +7,7 @@
 
 class ZListDataModel;
 class DeviceManager;
+class HttpClient;
 class DeviceController : public QObject
 {
     Q_OBJECT

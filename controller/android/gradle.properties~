@@ -4,6 +4,6 @@
 # as it contains information specific to your local configuration.
 
 androidBuildToolsVersion=24.0.1
-androidCompileSdkVersion=25
+androidCompileSdkVersion=1
 buildDir=.build
 qt5AndroidDir=/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java

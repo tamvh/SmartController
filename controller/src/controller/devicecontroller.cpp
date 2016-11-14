@@ -46,7 +46,7 @@ DeviceController::DeviceController(QObject *parent)
     d_ptr->deviceManager = GlobalHandle::deviceManager();
     d_ptr->deviceManager->initialize();
     d_ptr->httpClient = GlobalHandle::httpClient();
-//    d_ptr->httpClient->init("", 0);
+    d_ptr->httpClient->init(Configuration::hostServer, Configuration::portServer);
 }
 int DeviceController::addDevice(const QString& remoteAddress,
                                 const QString& deviceName,
@@ -158,8 +158,12 @@ bool DeviceController::checkDeviceExisted(const QString& deviceAddress) {
 
 int DeviceController::controlDevice(const QString& remoteAddress, int value) {
     qDebug() << "Start control device, remoteAddress: " + remoteAddress + ", value: " + QString::number(value);
-    QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/BroadcastSend","onStopAdvertising","(I)I", value);
-    QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/BroadcastSend","onStartAdvertising","(I)I", value);
+//    try {
+        QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/BroadcastSend","onStopAdvertising","(I)I", value);
+        QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/BroadcastSend","onStartAdvertising","(I)I", value);
+//    } catch () {
+//        qDebug() << "Exception";
+//    }
     return 0;
 }
 

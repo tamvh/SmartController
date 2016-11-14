@@ -32,7 +32,7 @@ void HttpClient::addPostItem(const QString &key, const QString &value) {
 }
 
 void HttpClient::sendRequest(const QString& api) {
-    _request->setUrl(QUrl("192.168.1.136:9980/" + api));
+    _request->setUrl(QUrl(_host + ":" + QString::number(_port) + "/" + api));
     switch (_method) {
     case HttpRequestMethod::GET:
         _repData = _mgr->get(*_request);
