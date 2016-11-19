@@ -1,23 +1,80 @@
 [
     {
-        "outputFile": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
+        "outputFile": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 57,
-                    "endOffset": 108
+                    "endColumn": 66,
+                    "endOffset": 117
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values-zh-rCN/values.xml",
+                    "file": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 207,
+                        "endColumn": 66,
+                        "endOffset": 269
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 122,
+                    "endColumn": 57,
+                    "endOffset": 175
+                },
+                "from": {
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values-zh-rCN/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
                         "startOffset": 185,
                         "endColumn": 57,
                         "endOffset": 238
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 180,
+                    "endColumn": 73,
+                    "endOffset": 249
+                },
+                "from": {
+                    "file": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 133,
+                        "endColumn": 73,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 254,
+                    "endColumn": 77,
+                    "endOffset": 327
+                },
+                "from": {
+                    "file": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 77,
+                        "endOffset": 128
                     }
                 }
             }

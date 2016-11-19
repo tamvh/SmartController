@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 146
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/res/values/libs.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/res/values/libs.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 236
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/res/values/libs.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/res/values/libs.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 320
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/res/values/libs.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/res/values/libs.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 398
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/res/values/libs.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/res/values/libs.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 5,
@@ -96,7 +96,7 @@
                     "endOffset": 513
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/res/values/libs.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/res/values/libs.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -116,7 +116,7 @@
                     "endOffset": 565
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -135,7 +135,7 @@
                     "endOffset": 636
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -154,7 +154,7 @@
                     "endOffset": 716
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -173,7 +173,7 @@
                     "endOffset": 795
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -192,7 +192,7 @@
                     "endOffset": 880
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -211,7 +211,7 @@
                     "endOffset": 964
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -230,7 +230,7 @@
                     "endOffset": 1056
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -249,7 +249,7 @@
                     "endOffset": 1132
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -268,7 +268,7 @@
                     "endOffset": 1216
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -287,7 +287,7 @@
                     "endOffset": 1293
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -306,7 +306,7 @@
                     "endOffset": 1368
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -325,7 +325,7 @@
                     "endOffset": 1435
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -344,7 +344,7 @@
                     "endOffset": 1506
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -363,7 +363,7 @@
                     "endOffset": 2714
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -382,7 +382,7 @@
                     "endOffset": 2787
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -401,7 +401,7 @@
                     "endOffset": 2860
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -420,7 +420,7 @@
                     "endOffset": 2932
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -439,7 +439,7 @@
                     "endOffset": 3005
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -458,7 +458,7 @@
                     "endOffset": 3078
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -477,7 +477,7 @@
                     "endOffset": 3143
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -496,7 +496,7 @@
                     "endOffset": 3212
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -515,7 +515,7 @@
                     "endOffset": 3277
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -534,7 +534,7 @@
                     "endOffset": 3359
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -553,7 +553,7 @@
                     "endOffset": 3442
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -572,7 +572,7 @@
                     "endOffset": 3523
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -591,7 +591,7 @@
                     "endOffset": 3606
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -610,7 +610,7 @@
                     "endOffset": 3678
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 4,
@@ -629,7 +629,7 @@
                     "endOffset": 3748
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -648,7 +648,7 @@
                     "endOffset": 3819
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -667,7 +667,7 @@
                     "endOffset": 3888
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -686,7 +686,7 @@
                     "endOffset": 3957
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
@@ -705,7 +705,7 @@
                     "endOffset": 4028
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -724,7 +724,7 @@
                     "endOffset": 4143
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -743,7 +743,7 @@
                     "endOffset": 4261
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -762,7 +762,7 @@
                     "endOffset": 4356
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -781,7 +781,7 @@
                     "endOffset": 4421
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -800,7 +800,7 @@
                     "endOffset": 4489
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
@@ -819,7 +819,7 @@
                     "endOffset": 4549
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -838,7 +838,7 @@
                     "endOffset": 4621
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
@@ -857,7 +857,7 @@
                     "endOffset": 4693
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -876,7 +876,7 @@
                     "endOffset": 4784
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
@@ -895,7 +895,7 @@
                     "endOffset": 4858
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -914,7 +914,7 @@
                     "endOffset": 4932
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -933,7 +933,7 @@
                     "endOffset": 5015
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -952,7 +952,7 @@
                     "endOffset": 5116
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 53,
                         "startColumn": 4,
@@ -971,7 +971,7 @@
                     "endOffset": 5179
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -990,7 +990,7 @@
                     "endOffset": 5244
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
@@ -1009,7 +1009,7 @@
                     "endOffset": 5373
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -1024,11 +1024,30 @@
                     "startLine": 68,
                     "startColumn": 4,
                     "startOffset": 5378,
-                    "endColumn": 59,
-                    "endOffset": 5433
+                    "endColumn": 107,
+                    "endOffset": 5481
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 319,
+                        "endColumn": 107,
+                        "endOffset": 422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 5486,
+                    "endColumn": 59,
+                    "endOffset": 5541
+                },
+                "from": {
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
@@ -1040,15 +1059,72 @@
             },
             {
                 "to": {
-                    "startLine": 69,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 5438,
-                    "endLine": 71,
-                    "endColumn": 10,
-                    "endOffset": 5526
+                    "startOffset": 5546,
+                    "endColumn": 121,
+                    "endOffset": 5663
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 197,
+                        "endColumn": 121,
+                        "endOffset": 314
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 5668,
+                    "endColumn": 111,
+                    "endOffset": 5775
+                },
+                "from": {
+                    "file": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 85,
+                        "endColumn": 111,
+                        "endOffset": 192
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 5780,
+                    "endColumn": 84,
+                    "endOffset": 5860
+                },
+                "from": {
+                    "file": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 427,
+                        "endColumn": 84,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 5865,
+                    "endLine": 75,
+                    "endColumn": 10,
+                    "endOffset": 5953
+                },
+                "from": {
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -1061,15 +1137,15 @@
             },
             {
                 "to": {
-                    "startLine": 72,
+                    "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 5531,
-                    "endLine": 74,
+                    "startOffset": 5958,
+                    "endLine": 78,
                     "endColumn": 10,
-                    "endOffset": 5664
+                    "endOffset": 6091
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
@@ -1082,15 +1158,15 @@
             },
             {
                 "to": {
-                    "startLine": 75,
+                    "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 5669,
-                    "endLine": 80,
+                    "startOffset": 6096,
+                    "endLine": 84,
                     "endColumn": 10,
-                    "endOffset": 5941
+                    "endOffset": 6368
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
@@ -1103,15 +1179,15 @@
             },
             {
                 "to": {
-                    "startLine": 81,
+                    "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 5946,
-                    "endLine": 84,
+                    "startOffset": 6373,
+                    "endLine": 88,
                     "endColumn": 10,
-                    "endOffset": 6100
+                    "endOffset": 6527
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
@@ -1124,15 +1200,15 @@
             },
             {
                 "to": {
-                    "startLine": 85,
+                    "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 6105,
-                    "endLine": 87,
+                    "startOffset": 6532,
+                    "endLine": 91,
                     "endColumn": 10,
-                    "endOffset": 6240
+                    "endOffset": 6667
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -1145,15 +1221,15 @@
             },
             {
                 "to": {
-                    "startLine": 88,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 6245,
-                    "endLine": 93,
+                    "startOffset": 6672,
+                    "endLine": 97,
                     "endColumn": 10,
-                    "endOffset": 6518
+                    "endOffset": 6945
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
@@ -1166,15 +1242,15 @@
             },
             {
                 "to": {
-                    "startLine": 94,
+                    "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 6523,
-                    "endLine": 97,
+                    "startOffset": 6950,
+                    "endLine": 101,
                     "endColumn": 10,
-                    "endOffset": 6678
+                    "endOffset": 7105
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
@@ -1187,15 +1263,15 @@
             },
             {
                 "to": {
-                    "startLine": 98,
+                    "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 6683,
-                    "endLine": 108,
+                    "startOffset": 7110,
+                    "endLine": 112,
                     "endColumn": 10,
-                    "endOffset": 7168
+                    "endOffset": 7595
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 91,
                         "startColumn": 4,
@@ -1208,15 +1284,15 @@
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 7173,
-                    "endLine": 111,
+                    "startOffset": 7600,
+                    "endLine": 115,
                     "endColumn": 10,
-                    "endOffset": 7273
+                    "endOffset": 7700
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 102,
                         "startColumn": 4,
@@ -1229,15 +1305,15 @@
             },
             {
                 "to": {
-                    "startLine": 112,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 7278,
-                    "endLine": 114,
+                    "startOffset": 7705,
+                    "endLine": 118,
                     "endColumn": 10,
-                    "endOffset": 7418
+                    "endOffset": 7845
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 105,
                         "startColumn": 4,
@@ -1250,15 +1326,15 @@
             },
             {
                 "to": {
-                    "startLine": 115,
+                    "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 7423,
-                    "endLine": 117,
+                    "startOffset": 7850,
+                    "endLine": 121,
                     "endColumn": 10,
-                    "endOffset": 7563
+                    "endOffset": 7990
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 108,
                         "startColumn": 4,
@@ -1271,15 +1347,15 @@
             },
             {
                 "to": {
-                    "startLine": 118,
+                    "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 7568,
-                    "endLine": 120,
+                    "startOffset": 7995,
+                    "endLine": 124,
                     "endColumn": 10,
-                    "endOffset": 7669
+                    "endOffset": 8096
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 111,
                         "startColumn": 4,
@@ -1292,15 +1368,15 @@
             },
             {
                 "to": {
-                    "startLine": 121,
+                    "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 7674,
-                    "endLine": 123,
+                    "startOffset": 8101,
+                    "endLine": 127,
                     "endColumn": 10,
-                    "endOffset": 7814
+                    "endOffset": 8241
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 114,
                         "startColumn": 4,
@@ -1313,15 +1389,15 @@
             },
             {
                 "to": {
-                    "startLine": 124,
+                    "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 7819,
-                    "endLine": 126,
+                    "startOffset": 8246,
+                    "endLine": 130,
                     "endColumn": 10,
-                    "endOffset": 7959
+                    "endOffset": 8386
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 117,
                         "startColumn": 4,
@@ -1334,15 +1410,15 @@
             },
             {
                 "to": {
-                    "startLine": 127,
+                    "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 7964,
-                    "endLine": 137,
+                    "startOffset": 8391,
+                    "endLine": 141,
                     "endColumn": 12,
-                    "endOffset": 8560
+                    "endOffset": 8987
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 122,
                         "startColumn": 4,
@@ -1355,15 +1431,15 @@
             },
             {
                 "to": {
-                    "startLine": 138,
+                    "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 8565,
-                    "endLine": 140,
+                    "startOffset": 8992,
+                    "endLine": 144,
                     "endColumn": 12,
-                    "endOffset": 8739
+                    "endOffset": 9166
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 133,
                         "startColumn": 4,
@@ -1376,15 +1452,15 @@
             },
             {
                 "to": {
-                    "startLine": 141,
+                    "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 8744,
-                    "endLine": 145,
+                    "startOffset": 9171,
+                    "endLine": 149,
                     "endColumn": 12,
-                    "endOffset": 9086
+                    "endOffset": 9513
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 136,
                         "startColumn": 4,
@@ -1397,15 +1473,15 @@
             },
             {
                 "to": {
-                    "startLine": 146,
+                    "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 9091,
-                    "endLine": 149,
+                    "startOffset": 9518,
+                    "endLine": 153,
                     "endColumn": 12,
-                    "endOffset": 9337
+                    "endOffset": 9764
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 141,
                         "startColumn": 4,
@@ -1418,15 +1494,15 @@
             },
             {
                 "to": {
-                    "startLine": 150,
+                    "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 9342,
-                    "endLine": 152,
+                    "startOffset": 9769,
+                    "endLine": 156,
                     "endColumn": 12,
-                    "endOffset": 9519
+                    "endOffset": 9946
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 145,
                         "startColumn": 4,
@@ -1439,15 +1515,15 @@
             },
             {
                 "to": {
-                    "startLine": 153,
+                    "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 9524,
-                    "endLine": 157,
+                    "startOffset": 9951,
+                    "endLine": 161,
                     "endColumn": 12,
-                    "endOffset": 9843
+                    "endOffset": 10270
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 148,
                         "startColumn": 4,
@@ -1460,15 +1536,15 @@
             },
             {
                 "to": {
-                    "startLine": 158,
+                    "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 9848,
-                    "endLine": 165,
+                    "startOffset": 10275,
+                    "endLine": 169,
                     "endColumn": 12,
-                    "endOffset": 10203
+                    "endOffset": 10630
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml",
                     "position": {
                         "startLine": 153,
                         "startColumn": 4,

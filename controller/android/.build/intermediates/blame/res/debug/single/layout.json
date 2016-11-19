@@ -1,42 +1,42 @@
 [
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/splash.xml",
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/splash.xml",
         "source": "/home/tamvh/Qt5.7.0/5.7/android_armv7/src/android/java/res/layout/splash.xml"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/com_facebook_login_fragment.xml"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_blue_small.xml"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/com_facebook_tooltip_bubble.xml"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_blue_small.xml"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/com_facebook_activity_layout.xml"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_blue_large.xml"
-    },
-    {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_white_round.xml"
-    },
-    {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_blue_round.xml"
-    },
-    {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/com_facebook_activity_layout.xml"
-    },
-    {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_white_small.xml"
-    },
-    {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_white_large.xml"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/layout/messenger_button_send_blue_round.xml"
     }
 ]

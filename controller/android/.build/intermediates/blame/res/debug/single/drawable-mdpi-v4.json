@@ -1,78 +1,78 @@
 [
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_button_send_round_shadow.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_button_send_round_shadow.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_blue.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_close.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_close.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_blue.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_send_icon.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_button_send_icon.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_icon.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_button_icon.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_close.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_close.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_button_send_round_shadow.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_white.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_small_white.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_blue.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_white.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_large_white.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_icon.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_button_icon.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_white.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_large_white.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_white.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_small_white.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_send_icon.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_button_send_icon.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_blue.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
-        "merged": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png",
-        "source": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "merged": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png",
+        "source": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
     }
 ]

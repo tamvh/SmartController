@@ -31,7 +31,7 @@ Page {
     background: Rectangle {
         implicitWidth: 100
         implicitHeight: 25
-        color: "#F5F5F5"
+        color: "#ECEFF1"
     }
 
     DeviceController {
@@ -144,6 +144,7 @@ Page {
             anchors.fill: parent
             onClicked: {
                 rectAddGroup.color = "white";
+                console.log("open popup add device");
                 popupAddDevice.open();
             }
             onPressed: {
@@ -260,14 +261,21 @@ Page {
         id: listDevice
         currentIndex: -1
         anchors.fill: parent
-
         delegate: ItemDelegate {
             width: Screen.width
             height: 100
+            background: Rectangle {
+                color: "white"
+            }
+            anchors {
+                left: parent.left
+                leftMargin: 5
+                right: parent.right
+                rightMargin: 5
+            }
             RowLayout {
                 id: layout
-                anchors.fill: parent
-
+                anchors.fill: parent                
                 Image {
                     anchors {
                         left: parent.left
@@ -351,11 +359,11 @@ Page {
                 anchors {
                     left: parent.left
                     right: parent.right
-                    leftMargin: 20
+                    leftMargin: 0
                     rightMargin: 0
                 }
-                color: "#EEEEEE"
-                height: 1
+                color: "#ECEFF1"
+                height: 5
             }
 
             highlighted: ListView.isCurrentItem
@@ -712,38 +720,45 @@ Page {
 
 
 
-    Item {
-        height: 60
-        width: parent.width
+//    Item {
+//        height: 60
+//        width: parent.width
 
-        property bool refresh: state == "pulled" ? true : false
+//        property bool refresh: state == "pulled" ? true : false
 
-        Row {
-            spacing: 6
-            height: childrenRect.height
-            anchors.centerIn: parent
+//        Row {
+//            spacing: 6
+//            anchors.centerIn: parent
 
+//            Image {
+//                id: arrow
+//                source: "qrc:/images/loading.png"
+//                transformOrigin: Item.Center
+//                Behavior on rotation { NumberAnimation { duration: 500 } }
+//            }
 
+//            Text {
+//                id: label
+//                anchors.verticalCenter: arrow.verticalCenter
+//                text: "Pull to refresh...    "
+//                font.pixelSize: 15
+//                color: "#999999"
+//            }
+//        }
 
-            Text {
-                id: label
-                anchors.verticalCenter: arrow.verticalCenter
-                text: "Pull to refresh...    "
-                font.pixelSize: 10
-                color: "#4E342E"
-            }
-        }
-
-        states: [
-            State {
-                name: "base"; when: listDevice.contentY <= -80
-                PropertyChanges { target: arrow; rotation: 180 }
-            },
-            State {
-                name: "pulled"; when: listDevice.contentY > -80
-                PropertyChanges { target: label; text: "" }
-                PropertyChanges { target: arrow; rotation: 180 }
-            }
-        ]
-    }
+//        states: [
+//            State {
+//                name: "base"; when: listDevice.contentY >= -120
+//                PropertyChanges {
+//                    target: arrow;
+//                    rotation: 180
+//                }
+//            },
+//            State {
+//                name: "pulled"; when: listDevice.contentY < -120
+//                PropertyChanges { target: label; text: "Release to refresh..." }
+//                PropertyChanges { target: arrow; rotation: 0 }
+//            }
+//        ]
+//    }
 }

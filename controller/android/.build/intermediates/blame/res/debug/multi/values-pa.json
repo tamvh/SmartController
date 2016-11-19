@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
+        "outputFile": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 110
                 },
                 "from": {
-                    "file": "/media/tamvh/Data/xxx/dienquang/qt/LampController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values-pa/values.xml",
+                    "file": "/home/tamvh/Documents/lamp/SmartController/controller/android/.build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values-pa/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

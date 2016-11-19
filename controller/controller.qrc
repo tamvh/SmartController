@@ -2,6 +2,7 @@
     <qresource prefix="/">
         <file>pages/MainPage.qml</file>
         <file>qtquickcontrols2.conf</file>
+	<file>images/loading.png</file>
 	<file>images/ic_power.png</file>
 	<file>images/light_type_1.png</file>
 	<file>images/light_type_2.png</file>

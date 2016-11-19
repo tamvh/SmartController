@@ -11,22 +11,22 @@
 #include <QString>
 #include <QDebug>
 #include <QLoggingCategory>
-
-enum class HttpRequestMethod {
-    GET,
-    POST
+enum HttpRequestMethod {
+    POST,
+    GET
 };
 
-class HttpClient
+class HttpClient : public QObject
 {
+    Q_OBJECT
 public:
-    HttpClient();
+    HttpClient(QObject* parent = 0);
     virtual ~HttpClient();
 public:
-    void init(const QString& host, int port);
+    void initialize(const QString& host, int port);
     void setRequestMethod(HttpRequestMethod requestMethod);
     void addPostItem(const QString &key, const QString &value);
-    void sendRequest(const QString& api);
+    void sendRequest(const QString& api, QByteArray m_postData);
     QNetworkReply* replyData();
 private:
     QByteArray _m_postData;

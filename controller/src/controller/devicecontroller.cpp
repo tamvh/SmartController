@@ -20,16 +20,10 @@
 #include "src/model/zdevice.h"
 #include "src/manager/devicemanager.h"
 #include "src/manager/devicemanager.h"
-
-#include <../commons/networks/core/httprequest.h>
-#include <../commons/networks/core/networkrequest.h>
-#include <../commons/networks/core/networkresponse.h>
-#include <../commons/networks/core/networkmanager.h>
-#include <../commons/networks/core/httpclient.h>
+#include "src/manager/http/httpclient.h"
 
 
 #include "devicecontroller.h"
-using namespace Network::Core;
 class DeviceController::Impl {
 public:
     ZListDataModel* listDevice;
@@ -46,7 +40,7 @@ DeviceController::DeviceController(QObject *parent)
     d_ptr->deviceManager = GlobalHandle::deviceManager();
     d_ptr->deviceManager->initialize();
     d_ptr->httpClient = GlobalHandle::httpClient();
-    d_ptr->httpClient->init(Configuration::hostServer, Configuration::portServer);
+    d_ptr->httpClient->initialize(Configuration::hostServer, Configuration::portServer);
 }
 int DeviceController::addDevice(const QString& remoteAddress,
                                 const QString& deviceName,
@@ -104,9 +98,9 @@ void DeviceController::addPostItem(const QString &key, const QString &value)
         m_postData.append(",");
     }
 
-    m_postData.append(key);
+    m_postData.append("\"" + key + "\"");
     m_postData.append(":");
-    m_postData.append(value);
+    m_postData.append("\"" + value + "\"");
 }
 
 int DeviceController::controlDevice(int deviceId, const QString& remoteAddress, int action) {
@@ -115,22 +109,11 @@ int DeviceController::controlDevice(int deviceId, const QString& remoteAddress, 
                 ", action: " + QString::number(action);
     QString api = "control";
 
-//    d_ptr->httpClient->setRequestMethod(HttpRequestMethod::POST);
-    d_ptr->httpClient->addPostItem("\"address\"","\"11:22\"");
-    d_ptr->httpClient->addPostItem("\"id\"","\"3\"");
-    d_ptr->httpClient->addPostItem("\"control\"","\"1\"");
-    d_ptr->httpClient->sendRequest(api);
-
-//    addPostItem("\"address\"","\"11:22\"");
-//    addPostItem("\"id\"","\"3\"");
-//    addPostItem("\"control\"","\"1\"");
-//    m_postData = "{" + m_postData + "}";
-//    QLoggingCategory::setFilterRules("qt.network.ssl.warning=false");
-//    QNetworkAccessManager * mgr = new QNetworkAccessManager();
-//    QNetworkRequest *request = new QNetworkRequest();
-//    request->setUrl(QUrl("http://192.168.1.42:9980/control"));
-//    request->setHeader(QNetworkRequest::ContentTypeHeader, "some/type");
-//    QNetworkReply *rep = mgr->post(*request, m_postData);
+    d_ptr->httpClient->setRequestMethod(HttpRequestMethod::POST);
+    addPostItem("address", remoteAddress);
+    addPostItem("id", QString::number(deviceId));
+    addPostItem("control", QString::number(action));
+    d_ptr->httpClient->sendRequest(api, m_postData);
     return 0;
 }
 

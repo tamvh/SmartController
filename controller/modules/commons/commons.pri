@@ -30,7 +30,6 @@ SOURCES += \
     $$PWD/networks/core/networkmanager.cpp \
     $$PWD/networks/core/networkrequest.cpp \
     $$PWD/networks/core/networkresponse.cpp \
-    $$PWD/networks/core/httpclient.cpp \
     $$PWD/networks/core/socketclient.cpp
 
 HEADERS += \
@@ -52,6 +51,5 @@ HEADERS += \
     $$PWD/networks/core/networkmanager.h \
     $$PWD/networks/core/networkrequest.h \
     $$PWD/networks/core/networkresponse.h \
-    $$PWD/networks/core/httpclient.h \
     $$PWD/networks/core/socketclient.h
 

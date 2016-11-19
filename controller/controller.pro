@@ -54,7 +54,8 @@ SOURCES += \
     src/manager/groupmanager.cpp \
     QZXingFilter.cpp \
     src/model/zuser.cpp \
-    src/controller/logincontroller.cpp
+    src/controller/logincontroller.cpp \
+    src/manager/http/httpclient.cpp
 
 HEADERS += \
     src/app_commons.h \
@@ -93,7 +94,8 @@ HEADERS += \
     src/manager/groupmanager.h \
     QZXingFilter.h \
     src/model/zuser.h \
-    src/controller/logincontroller.h
+    src/controller/logincontroller.h \
+    src/manager/http/httpclient.h
 
 OTHER_FILES += \
     controller.qml \
@@ -122,7 +124,10 @@ DISTFILES += \
     android/src/org/qtproject/lamp/User.java \
     android/src/org/qtproject/lamp/PrefUtils.java \
     android/src/org/qtproject/lamp/ComplexPreferences.java \
-    pages/Common.js
+    pages/Common.js \
+    pages/DeviceDetailType3.qml \
+    pages/DeviceDetailType4.qml \
+    pages/DeviceDetailType5.qml
 
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android

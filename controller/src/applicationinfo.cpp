@@ -20,8 +20,9 @@
 #include "controller/devicescanningcontroller.h"
 #include "controller/groupcontroller.h"
 #include "controller/devicecontroller.h"
-#include "../commons/networks/core/httpclient.h"
+#include "manager/http/httpclient.h"
 #include "QZXing.h"
+#include "configuration.h"
 
 #include "applicationinfo.h"
 
@@ -60,6 +61,7 @@ struct ApplicationInfo::ApplicationInfoPrivate
 //        cacheManager = std::shared_ptr<UPCache>(new UPCache());
         deviceManager->initialize();
         deviceCalendarManager->initialize();
+//        httpClient->initialize(Configuration::hostServer, Configuration::portServer);
     }
 public:
     std::shared_ptr<DB::UPDatabase> applicationDB;
