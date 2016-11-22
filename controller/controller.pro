@@ -127,7 +127,10 @@ DISTFILES += \
     pages/Common.js \
     pages/DeviceDetailType3.qml \
     pages/DeviceDetailType4.qml \
-    pages/DeviceDetailType5.qml
+    pages/DeviceDetailType5.qml \
+    pages/DeviceDetailType.qml \
+    pages/utils.js \
+    pages/EColorPicker.qml
 
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android

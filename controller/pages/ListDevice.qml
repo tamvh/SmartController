@@ -239,8 +239,20 @@ Page {
                        if(deviceType === 1) {
                             stackView.push("qrc:/pages/DeviceDetailType1.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
                        }
-                       else {
+                       else if(deviceType === 2){
                             stackView.push("qrc:/pages/DeviceDetailType2.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                       }
+                       else if(deviceType === 3){
+                            stackView.push("qrc:/pages/DeviceDetailType3.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                       }
+                       else if(deviceType === 4){
+                            stackView.push("qrc:/pages/DeviceDetailType4.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                       }
+                       else if(deviceType === 5){
+                            stackView.push("qrc:/pages/DeviceDetailType4.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                       }
+                       else {
+                            stackView.push("qrc:/pages/DeviceDetailType.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
                        }
 
                    }
@@ -370,12 +382,47 @@ Page {
             onClicked: {
                 console.log("push data to deviceId: " + deviceId);
                 if(deviceType === 1) {
-                    stackView.push("qrc:/pages/DeviceDetailType1.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                    stackView.push("qrc:/pages/DeviceDetailType1.qml", {
+                                       _deviceId: deviceId,
+                                       _deviceaddress: deviceAddress,
+                                       _deviceName: deviceName,
+                                       _groupname: _groupname})
+                }
+                else if(deviceType == 2) {
+                    stackView.push("qrc:/pages/DeviceDetailType2.qml", {
+                                       _deviceId: deviceId,
+                                       _deviceaddress: deviceAddress,
+                                       _deviceName: deviceName,
+                                       _groupname: _groupname})
+                }
+                else if(deviceType == 3) {
+                    stackView.push("qrc:/pages/DeviceDetailType3.qml", {
+                                       _deviceId: deviceId,
+                                       _deviceaddress: deviceAddress,
+                                       _deviceName: deviceName,
+                                       _groupname: _groupname})
+                }
+                else if(deviceType == 4) {
+                    stackView.push("qrc:/pages/DeviceDetailType4.qml", {
+                                       _deviceId: deviceId,
+                                       _deviceaddress: deviceAddress,
+                                       _deviceName: deviceName,
+                                       _groupname: _groupname})
+                }
+                else if(deviceType == 5) {
+                    stackView.push("qrc:/pages/DeviceDetailType5.qml", {
+                                       _deviceId: deviceId,
+                                       _deviceaddress: deviceAddress,
+                                       _deviceName: deviceName,
+                                       _groupname: _groupname})
                 }
                 else {
-                    stackView.push("qrc:/pages/DeviceDetailType2.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                    stackView.push("qrc:/pages/DeviceDetailType.qml", {
+                                       _deviceId: deviceId,
+                                       _deviceaddress: deviceAddress,
+                                       _deviceName: deviceName,
+                                       _groupname: _groupname})
                 }
-
             }
             onPressAndHold: {
                 console.log("onPressAndHold Turn on: " + deviceName);
@@ -497,9 +544,15 @@ Page {
         id: itemNotFoundDevice
         height: parent.height
         width: parent.width
-        Text {
+        Image {
+            id: imgNotFound
+            source: "qrc:/images/sad.png"
             anchors.centerIn: parent
-            text: qsTr("Not found device.")
+        }
+        Text {
+            anchors.top: imgNotFound.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: qsTr("Not found!")
             color: "gray"
             font.pixelSize: 13
         }
@@ -616,7 +669,13 @@ Page {
             ComboBox {
                 id: comboDeviceType
                 property int styleIndex: -1
-                model: ["[1] - Ốp trần cao cấp 1", "[2] - Ốp trần cao cấp 2"]
+                model: [
+                    "[1] - BLE SmartPlug",
+                    "[2] - Simple (On/Off)",
+                    "[3] - Dimmer 1",
+                    "[4] - Dimmer 2",
+                    "[5] - Dimmer 3"
+                ]
                 background: Rectangle {
                     radius: 50
                     implicitWidth: parent.width

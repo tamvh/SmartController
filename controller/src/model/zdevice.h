@@ -8,7 +8,10 @@
 
 enum class ZDeviceType {
     BLEPlug = 1,
-    BLELamp = 2
+    Simple = 2,
+    Dimmer1 = 3,
+    Dimmer2 = 4,
+    Dimmer3 = 5
 };
 
 //! Data structure for a device

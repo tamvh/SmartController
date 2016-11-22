@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
  * If the app goes off screen (or gets killed completely) advertising can continue because this
  * Service is maintaining the necessary Callback in memory.
  */
-public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtService {
+public class AdvertiserService extends Service {
     private static NotificationManager m_notificationManager;
     private static Notification.Builder m_builder;
     private static AdvertiserService m_instance;
@@ -62,10 +62,11 @@ public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtServ
     /**
      * Length of time to allow advertising before automatically shutting off. (10 minutes)
      */
-    private long TIMEOUT = TimeUnit.MILLISECONDS.convert(10, TimeUnit.MINUTES);
+    private long TIMEOUT = TimeUnit.MILLISECONDS.convert(3, TimeUnit.SECONDS);
 
     @Override
     public void onCreate() {
+        Log.d(TAG, "onCreate Advertiser Service");
         running = true;
         initialize();
         startAdvertising();
@@ -80,6 +81,7 @@ public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtServ
          * the whim of the system, and onDestroy can be delayed or skipped entirely if memory need
          * is critical.
          */
+        Log.d(TAG, "onDestroy Advertiser Service");
         running = false;
         stopAdvertising();
         mHandler.removeCallbacks(timeoutRunnable);
@@ -100,20 +102,23 @@ public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtServ
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void initialize() {
-        if (mBluetoothLeAdvertiser == null) {
-            BluetoothManager mBluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
-            if (mBluetoothManager != null) {
-                BluetoothAdapter mBluetoothAdapter = mBluetoothManager.getAdapter();
-                if (mBluetoothAdapter != null) {
-                    mBluetoothLeAdvertiser = mBluetoothAdapter.getBluetoothLeAdvertiser();
+        try {
+            if (mBluetoothLeAdvertiser == null) {
+                BluetoothManager mBluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
+                if (mBluetoothManager != null) {
+                    BluetoothAdapter mBluetoothAdapter = mBluetoothManager.getAdapter();
+                    if (mBluetoothAdapter != null) {
+                        mBluetoothLeAdvertiser = mBluetoothAdapter.getBluetoothLeAdvertiser();
+                    } else {
+                        Toast.makeText(this, "BLE NULL", Toast.LENGTH_LONG).show();
+                    }
                 } else {
                     Toast.makeText(this, "BLE NULL", Toast.LENGTH_LONG).show();
                 }
-            } else {
-                Toast.makeText(this, "BLE NULL", Toast.LENGTH_LONG).show();
             }
+        } catch (Exception ex) {
+            Log.d(TAG, "ex: " + ex.getMessage());
         }
-
     }
 
     /**
@@ -122,15 +127,19 @@ public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtServ
      */
     private void setTimeout() {
         mHandler = new Handler();
-        timeoutRunnable = new Runnable() {
-            @Override
-            public void run() {
-                Log.d(TAG, "AdvertiserService has reached timeout of " + TIMEOUT + " milliseconds, stopping advertising.");
-                sendFailureIntent(ADVERTISING_TIMED_OUT);
-                stopSelf();
-            }
-        };
-        mHandler.postDelayed(timeoutRunnable, TIMEOUT);
+        try {
+            timeoutRunnable = new Runnable() {
+                @Override
+                public void run() {
+                    Log.d(TAG, "AdvertiserService has reached timeout of " + TIMEOUT + " milliseconds, stopping advertising.");
+                    sendFailureIntent(ADVERTISING_TIMED_OUT);
+                    stopSelf();
+                }
+            };
+            mHandler.postDelayed(timeoutRunnable, TIMEOUT);
+        } catch (Exception ex) {
+            Log.d(TAG, "ex: " + ex.getMessage());
+        }
     }
 
     /**
@@ -139,18 +148,22 @@ public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtServ
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void startAdvertising() {
         Log.d(TAG, "Service: Starting Advertising");
+        try {
+            if (mAdvertiseCallback == null) {
+                AdvertiseSettings settings = buildAdvertiseSettings();
+                AdvertiseData data = buildAdvertiseData();
+                mAdvertiseCallback = new SampleAdvertiseCallback();
 
-        if (mAdvertiseCallback == null) {
-            AdvertiseSettings settings = buildAdvertiseSettings();
-            AdvertiseData data = buildAdvertiseData();
-            mAdvertiseCallback = new SampleAdvertiseCallback();
-
-            if (mBluetoothLeAdvertiser != null) {
-                mBluetoothLeAdvertiser.startAdvertising(settings, data,
-                        mAdvertiseCallback);
-                Log.d(TAG, "Send data finish");
+                if (mBluetoothLeAdvertiser != null) {
+                    mBluetoothLeAdvertiser.startAdvertising(settings, data,
+                            mAdvertiseCallback);
+                    Log.d(TAG, "Send data finish");
+                }
             }
+        } catch (Exception ex) {
+            Log.d(TAG, "ex: " + ex.getMessage());
         }
+
     }
 
     /**
@@ -159,9 +172,13 @@ public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtServ
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void stopAdvertising() {
         Log.d(TAG, "Service: Stopping Advertising");
-        if (mBluetoothLeAdvertiser != null) {
-            mBluetoothLeAdvertiser.stopAdvertising(mAdvertiseCallback);
-            mAdvertiseCallback = null;
+        try {
+            if (mBluetoothLeAdvertiser != null) {
+                mBluetoothLeAdvertiser.stopAdvertising(mAdvertiseCallback);
+                mAdvertiseCallback = null;
+            }
+        } catch (Exception ex) {
+            Log.d(TAG, "ex: " + ex.getMessage());
         }
     }
 
@@ -223,7 +240,7 @@ public class AdvertiserService extends org.qtproject.qt5.android.bindings.QtServ
             settingsBuilder.setAdvertiseMode(AdvertiseSettings.ADVERTISE_MODE_LOW_POWER);
             settingsBuilder.wait(100);
         } catch (Exception ex) {
-
+            Log.d(TAG, "ex: " + ex.getMessage());
         }
         return settingsBuilder.build();
     }

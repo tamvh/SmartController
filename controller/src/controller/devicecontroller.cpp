@@ -12,7 +12,6 @@
 #include <QUrl>
 #include <QObject>
 #include <QString>
-
 #include "zlistdatamodel.h"
 #include "../configuration.h"
 #include "src/app_commons.h"
@@ -21,7 +20,6 @@
 #include "src/manager/devicemanager.h"
 #include "src/manager/devicemanager.h"
 #include "src/manager/http/httpclient.h"
-
 
 #include "devicecontroller.h"
 class DeviceController::Impl {
@@ -65,6 +63,15 @@ int DeviceController::addDevice(const QString& remoteAddress,
     else if(deviceType == 2) {
         deviceAvatar = "qrc:/images/light_type_2.png";
     }
+    else if(deviceType == 3) {
+        deviceAvatar = "qrc:/images/dimmer1.png";
+    }
+    else if(deviceType == 4) {
+        deviceAvatar = "qrc:/images/dimmer2.png";
+    }
+    else if(deviceType == 5) {
+        deviceAvatar = "qrc:/images/dimmer3.png";
+    }
 
     ZDevice itemDevice;
     itemDevice.setDeviceId(deviceId);
@@ -87,7 +94,6 @@ int DeviceController::addDevice(const QString& remoteAddress,
                                                             deviceAvatar,
                                                             calendarSummary));
         d_ptr->listDevice->addItem(device);
-
     }
     return 0;
 }
@@ -141,12 +147,14 @@ bool DeviceController::checkDeviceExisted(const QString& deviceAddress) {
 
 int DeviceController::controlDevice(const QString& remoteAddress, int value) {
     qDebug() << "Start control device, remoteAddress: " + remoteAddress + ", value: " + QString::number(value);
-//    try {
-        QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/BroadcastSend","onStopAdvertising","(I)I", value);
-        QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/BroadcastSend","onStartAdvertising","(I)I", value);
-//    } catch () {
-//        qDebug() << "Exception";
-//    }
+    try {
+//        QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/BroadcastSend","onStopAdvertising","(I)I", value);
+        QAndroidJniObject::callStaticMethod<jint>("org/qtproject/lamp/MainActivity","onStartAdvertising","(I)I", value);
+        qDebug() << "finish control device";
+    } catch (const std::bad_alloc &) {
+        qDebug() << "Exception";
+        return 0;
+    }
     return 0;
 }
 

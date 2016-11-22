@@ -166,6 +166,7 @@ ApplicationWindow {
                     ListElement {iconSource : "qrc:/images/menu_key.png"; title: "Security Key"; source: "qrc:/pages/SecurityKey.qml" }
                     ListElement {iconSource : "qrc:/images/menu_settings.png"; title: "Settings"; source: "qrc:/pages/Setting.qml" }
                     ListElement {iconSource : "qrc:/images/menu_sync.png"; title: "Sync"; source: "qrc:/pages/Sync.qml" }
+                    ListElement {iconSource : "qrc:/images/menu_sync.png"; title: "Test Color"; source: "qrc:/pages/EColorPicker.qml" }
                 }
                 ScrollIndicator.vertical: ScrollIndicator { }
             }

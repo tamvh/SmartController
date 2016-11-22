@@ -3,6 +3,7 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.0
 import QtQuick.Controls.Material 2.0
 import QtQuick.Controls.Universal 2.0
+import QtQuick.Controls.Styles 1.4
 import Qt.labs.settings 1.0
 import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0
@@ -97,6 +98,156 @@ Page {
                     }
                 }
             }
+        }
+    }
+
+    Rectangle {
+        id: rectIcon
+        height: parent.height/2;
+        width: parent.width;
+        Rectangle {
+            id: rectHeader
+            height: parent.height;
+            width: parent.width;
+            color: "lightblue";
+            Image {
+                id: icoLamp
+                source: "qrc:/images/light_type_2_off.png"
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        console.log("rectIcon onClicked");
+                    }
+                }
+            }
+
+            Text {
+                id: txtVoltage
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 5
+                text: qsTr("Voltage")
+                font.pixelSize: 10
+            }
+            Text {
+                id: txtVoltageValue
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: txtVoltage.top
+                text: qsTr("0W")
+                font.pixelSize: 20
+                color: "red"
+                opacity: 0.8
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onPressed: {
+                    console.log("PRESSED")
+                    rectHeader.state = "PRESSED"
+                    header.state = "PRESSED"
+                    rectController.state = "PRESSED"
+                }
+                onReleased: {
+                    console.log("RELEASED")
+                    rectController.state = "RELEASED"
+                    rectHeader.state = "RELEASED"
+                    header.state = "RELEASED"
+                }
+            }
+            states: [
+                State {
+                    name: "PRESSED"
+                    PropertyChanges { target: header; color: "lightsteelblue"}
+                    PropertyChanges { target: rectHeader; color: "lightsteelblue"}
+                    PropertyChanges { target: rectController; color: "#F5F5F5"}
+                },
+                State {
+                    name: "RELEASED"
+                    PropertyChanges { target: header; color: "lightblue"}
+                    PropertyChanges { target: rectHeader; color: "lightblue"}
+                    PropertyChanges { target: rectController; color: "white"}
+                }
+            ]
+            transitions: [
+                Transition {
+                    from: "PRESSED"
+                    to: "RELEASED"
+                    ColorAnimation { target: header; duration: 500}
+                    ColorAnimation { target: rectHeader; duration: 500}
+                    ColorAnimation { target: rectController; duration: 500}
+                },
+                Transition {
+                    from: "RELEASED"
+                    to: "PRESSED"
+                    ColorAnimation { target: header; duration: 500}
+                    ColorAnimation { target: rectHeader; duration: 500}
+                    ColorAnimation { target: rectController; duration: 500}
+                }
+            ]
+        }
+    }
+
+    Rectangle {
+        id: rectController
+        width: parent.width
+        height: parent.height/2
+        anchors.top: rectIcon.bottom
+//        Image {
+//            id: icPower
+//            source: "qrc:/images/ic_power.png"
+//            anchors.horizontalCenter: parent.horizontalCenter
+//            anchors.verticalCenter: parent.verticalCenter
+//            MouseArea {
+//                anchors.fill: parent
+//                onClicked: {
+//                    if(_action === 0) {
+//                        _action = 1;
+//                        icoLamp.source = "qrc:/images/light_type_2_on.png"
+//                    }
+//                    else {
+//                        _action = 0;
+//                        icoLamp.source = "qrc:/images/light_type_2_off.png"
+//                    }
+//                    deviceController.controlDevice(_deviceId, _deviceaddress, _action);
+//                }
+//                onPressed: {
+//                    rectController.color = "#CFD8DC";
+//                }
+//                onReleased: {
+//                    rectController.color = "white";
+//                }
+//            }
+//        }
+        Rectangle {
+            height: 40
+            width: 80
+            radius: 5
+            border.color: "#EFEBE9"
+            border.width: 0.5
+            anchors {
+                top: parent.top
+                topMargin: 20
+                horizontalCenter: parent.horizontalCenter
+            }
+            Text {
+                id: txtValueSlider
+                text: (sliderChangeValue.value).toFixed(0)
+                anchors {
+                    centerIn: parent
+                }
+            }
+        }       
+
+
+        Slider {
+            id: sliderChangeValue
+            width: rectController.width - 100
+            height: 50
+            from: 0
+            to: 255
+            anchors.centerIn: parent
         }
     }
 }
