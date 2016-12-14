@@ -1,29 +1,29 @@
 #include <QSettings>
 #include <QDebug>
 #include <QQmlApplicationEngine>
+#include <vector>
 #include <QtQml>
 #include <QFontDatabase>
 #include <QQuickWindow>
-
-#include <vector>
-
 #include <qmlcontrols.h>
 #include <zlistmodel.h>
 #include <db/updatabase.h>
+#include "manager/commonmanager.h"
 #include "manager/devicemanager.h"
 #include "manager/groupmanager.h"
 #include "manager/devicecalendarmanager.h"
 #include "manager/devicehardwareservice.h"
+#include "manager/http/httpclient.h"
+#include "controller/initcontroller.h"
 #include "controller/devicelistcontroller.h"
 #include "controller/devicedetailcontroller.h"
 #include "controller/devicecalendarcontroller.h"
 #include "controller/devicescanningcontroller.h"
 #include "controller/groupcontroller.h"
 #include "controller/devicecontroller.h"
-#include "manager/http/httpclient.h"
+
 #include "QZXing.h"
 #include "configuration.h"
-
 #include "applicationinfo.h"
 
 struct ApplicationInfo::ApplicationInfoPrivate
@@ -61,10 +61,10 @@ struct ApplicationInfo::ApplicationInfoPrivate
 //        cacheManager = std::shared_ptr<UPCache>(new UPCache());
         deviceManager->initialize();
         deviceCalendarManager->initialize();
-//        httpClient->initialize(Configuration::hostServer, Configuration::portServer);
     }
 public:
     std::shared_ptr<DB::UPDatabase> applicationDB;
+    std::shared_ptr<CommonManager> commonManager;
     std::shared_ptr<DeviceManager> deviceManager;
     std::shared_ptr<GroupManager> groupManager;
     std::shared_ptr<DeviceCalendarManager> deviceCalendarManager;
@@ -82,6 +82,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent):
     qDebug()<<"____________________ALLOC_____"<<ApplicationInfo::applicationDB();
     Q_ASSERT_X(!self, "ApplicationInfo", "there should be only one application object");
     self = this;
+    d_ptr->commonManager = std::shared_ptr<CommonManager>(new CommonManager);
     d_ptr->deviceManager = std::shared_ptr<DeviceManager>(new DeviceManager);
     d_ptr->groupManager = std::shared_ptr<GroupManager>(new GroupManager);
     d_ptr->deviceCalendarManager = std::shared_ptr<DeviceCalendarManager>(new DeviceCalendarManager());
@@ -96,6 +97,7 @@ void ApplicationInfo::applicationStartup()
     d_ptr->registerApplicationFonts();
     d_ptr->initializeApplicationContext();
 
+    qmlRegisterType<InitController>("SmartControls", 1, 0, "InitController");
     qmlRegisterType<DeviceListController>("SmartControls", 1, 0, "DeviceListController");
     qmlRegisterType<DeviceDetailController>("SmartControls", 1, 0, "DeviceDetailController");
     qmlRegisterType<DeviceCalendarController>("SmartControls", 1, 0, "DeviceCalendarController");
@@ -128,6 +130,11 @@ void ApplicationInfo::start(const QString &qmlFile)
 DB::UPDatabase *ApplicationInfo::applicationDB() const
 {
     return d_ptr->applicationDB.get();
+}
+
+CommonManager *ApplicationInfo::commonManager() const
+{
+    return d_ptr->commonManager.get();
 }
 
 DeviceManager *ApplicationInfo::deviceManager() const

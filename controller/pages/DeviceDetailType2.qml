@@ -19,7 +19,8 @@ Page {
     property var _power: 0
     property var _valueBrightnessInc: 1
     property var _valueBrightnessDesc: 2
-    property var _action: 0
+    property var _value: 0
+    property var _command: 10001
     Settings {
         id: settings
         property string style: "Universal"
@@ -202,15 +203,19 @@ Page {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    if(_action === 0) {
-                        _action = 1;
+                    if(_value === 0) {
+                        _value = 1;
                         icoLamp.source = "qrc:/images/light_type_2_on.png"
                     }
                     else {
-                        _action = 0;
+                        _value = 0;
                         icoLamp.source = "qrc:/images/light_type_2_off.png"
                     }
-                    deviceController.controlDevice(_deviceId, _deviceaddress, _action);
+                    deviceController.controlDeviceSimpleLight(
+                                _deviceId,
+                                _deviceaddress,
+                                _command,
+                                _value);
                 }
                 onPressed: {
                     rectController.color = "#CFD8DC";

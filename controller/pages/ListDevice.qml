@@ -24,6 +24,8 @@ Page {
     property var _display: 0 //list
     property var _currentIndex: 0
     property var _totalDevice: 0
+    property var _command: 2 //command join
+    property var _value: 0
     Settings {
         id: settings
         property string style: "Universal"
@@ -195,9 +197,9 @@ Page {
                         }
                         Image {
                             id: imgDeviceinGrid
+                            width: 64
+                            height: 64
                             source: deviceAvatar;
-                            height: 20
-                            width: 20
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.verticalCenter: parent.verticalCenter
                         }
@@ -249,7 +251,10 @@ Page {
                             stackView.push("qrc:/pages/DeviceDetailType4.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
                        }
                        else if(deviceType === 5){
-                            stackView.push("qrc:/pages/DeviceDetailType4.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                            stackView.push("qrc:/pages/DeviceDetailType5.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
+                       }
+                       else if(deviceType === 6){
+                            stackView.push("qrc:/pages/DeviceDetailType6.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
                        }
                        else {
                             stackView.push("qrc:/pages/DeviceDetailType.qml", {_deviceId: deviceId, _deviceaddress: deviceAddress, _deviceName: deviceName, _groupname: _groupname})
@@ -297,6 +302,8 @@ Page {
                     fillMode: Image.Pad
                     horizontalAlignment: Image.AlignHCenter
                     verticalAlignment: Image.AlignVCenter
+                    height: 64
+                    width: 64
                     source: deviceAvatar
                 }
 
@@ -339,7 +346,7 @@ Page {
                         Label {
                             text: "Address: " + deviceAddress
                             color: "#9E9E9E"
-                            font.pixelSize: 13
+                            font.pixelSize: 11
                             elide: Label.ElideRight
                             horizontalAlignment: Qt.AlignLeft
                             verticalAlignment: Qt.AlignVCenter
@@ -348,7 +355,17 @@ Page {
                         Label {
                             text: "Voltage: " + deviceValue
                             color: "#9E9E9E"
-                            font.pixelSize: 13
+                            font.pixelSize: 11
+                            elide: Label.ElideRight
+                            horizontalAlignment: Qt.AlignLeft
+                            verticalAlignment: Qt.AlignVCenter
+                            Layout.fillWidth: true
+                        }
+                        Label {
+                            id: lblDeviceType
+                            text: "Type: " + deviceType
+                            color: "#9E9E9E"
+                            font.pixelSize: 11
                             elide: Label.ElideRight
                             horizontalAlignment: Qt.AlignLeft
                             verticalAlignment: Qt.AlignVCenter
@@ -359,6 +376,22 @@ Page {
 
 
                 Component.onCompleted: {
+                    if(deviceType == 1) {
+                        lblDeviceType.text = "Type: Ceiling Lamp"
+                    } else if(deviceType == 2) {
+                        lblDeviceType.text = "Type: Simple(On/Off)"
+                    } else if(deviceType == 3) {
+                        lblDeviceType.text = "Type: Dimmer(1 color)"
+                    } else if(deviceType == 4) {
+                        lblDeviceType.text = "Type: Dimmer(Cool-Warm)"
+                    } else if(deviceType == 5) {
+                        lblDeviceType.text = "Type: Dimmer(RGB)"
+                    } else if(deviceType == 6) {
+                        lblDeviceType.text = "Type: SmartPlug"
+                    } else {
+                        lblDeviceType.text = "Type: Unknown"
+                    }
+
                     if(_display === 1) {
                         listDevice.visible = false
                         gridDevice.visible = true
@@ -394,6 +427,11 @@ Page {
                                        _deviceaddress: deviceAddress,
                                        _deviceName: deviceName,
                                        _groupname: _groupname})
+                    deviceController.controlDeviceSimpleLight(
+                                deviceId,
+                                deviceAddress,
+                                _command,
+                                _value);
                 }
                 else if(deviceType == 3) {
                     stackView.push("qrc:/pages/DeviceDetailType3.qml", {
@@ -411,6 +449,13 @@ Page {
                 }
                 else if(deviceType == 5) {
                     stackView.push("qrc:/pages/DeviceDetailType5.qml", {
+                                       _deviceId: deviceId,
+                                       _deviceaddress: deviceAddress,
+                                       _deviceName: deviceName,
+                                       _groupname: _groupname})
+                }
+                else if(deviceType == 6) {
+                    stackView.push("qrc:/pages/DeviceDetailType6.qml", {
                                        _deviceId: deviceId,
                                        _deviceaddress: deviceAddress,
                                        _deviceName: deviceName,
@@ -639,6 +684,7 @@ Page {
                         txtDeviceAddress.text.toUpperCase();
                     }
                 }
+
             }
 
             TextField {
@@ -670,11 +716,12 @@ Page {
                 id: comboDeviceType
                 property int styleIndex: -1
                 model: [
-                    "[1] - BLE SmartPlug",
+                    "[1] - Ceiling Lamp",
                     "[2] - Simple (On/Off)",
-                    "[3] - Dimmer 1",
-                    "[4] - Dimmer 2",
-                    "[5] - Dimmer 3"
+                    "[3] - Dimmer 1 Color",
+                    "[4] - Dimmer Cool-Warm",
+                    "[5] - Dimmer RGB",
+                    "[6] - SmartPlug"
                 ]
                 background: Rectangle {
                     radius: 50

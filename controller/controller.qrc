@@ -2,6 +2,9 @@
     <qresource prefix="/">
         <file>pages/MainPage.qml</file>
         <file>qtquickcontrols2.conf</file>
+	<file>images/delete.png</file>
+	<file>images/smartplug.png</file>
+	<file>images/smartplug128.png</file>
 	<file>images/sad.png</file>
 	<file>images/colorpickerImage.png</file>
 	<file>images/dimmer1.png</file>
@@ -96,11 +99,13 @@
         <file>pages/Notification.qml</file>
         <file>pages/Login.qml</file>
         <file>pages/Constants.qml</file>
-        <file>pages/DeviceDetailType1.qml</file>
+	<file>pages/ControlGroupType2.qml</file>
+	<file>pages/DeviceDetailType1.qml</file>
 	<file>pages/DeviceDetailType2.qml</file>
 	<file>pages/DeviceDetailType3.qml</file>
 	<file>pages/DeviceDetailType4.qml</file>
 	<file>pages/DeviceDetailType5.qml</file>
+	<file>pages/DeviceDetailType6.qml</file>
 	<file>pages/DeviceDetailType.qml</file>
 	<file>pages/EColorPicker.qml</file>
         <file alias="ic_launcher.png">src/resources/images/ic_launcher.png</file>

@@ -55,7 +55,11 @@ SOURCES += \
     QZXingFilter.cpp \
     src/model/zuser.cpp \
     src/controller/logincontroller.cpp \
-    src/manager/http/httpclient.cpp
+    src/manager/http/httpclient.cpp \
+    src/controller/initcontroller.cpp \
+    src/db/zcommondb.cpp \
+    src/model/zvalue.cpp \
+    src/manager/commonmanager.cpp
 
 HEADERS += \
     src/app_commons.h \
@@ -95,7 +99,11 @@ HEADERS += \
     QZXingFilter.h \
     src/model/zuser.h \
     src/controller/logincontroller.h \
-    src/manager/http/httpclient.h
+    src/manager/http/httpclient.h \
+    src/controller/initcontroller.h \
+    src/db/zcommondb.h \
+    src/model/zvalue.h \
+    src/manager/commonmanager.h
 
 OTHER_FILES += \
     controller.qml \
@@ -130,7 +138,9 @@ DISTFILES += \
     pages/DeviceDetailType5.qml \
     pages/DeviceDetailType.qml \
     pages/utils.js \
-    pages/EColorPicker.qml
+    pages/EColorPicker.qml \
+    pages/DeviceDetailType6.qml \
+    pages/ControlGroupType2.qml
 
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android

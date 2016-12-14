@@ -9,6 +9,7 @@ import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0
 import SmartControls 1.0
 import "Common.js" as Global
+import "utils.js" as Utils
 Page {
     id: pageDeviceDetailType3
     title: "Device Detail"
@@ -19,6 +20,15 @@ Page {
     property var _power: 0
     property var _valueBrightnessInc: 1
     property var _valueBrightnessDesc: 2
+
+    property real h
+    property real s : 1
+    property real v : 1
+    property color color1 /*: Utils.hsvToHsl(0.6,1.0,1.0)*/
+    signal changeColor(color color1);
+    signal mouseRelease();
+    //visible: true
+    property real ringWidth: 0.60
     Settings {
         id: settings
         property string style: "Universal"
@@ -102,152 +112,103 @@ Page {
     }
 
     Rectangle {
-        id: rectIcon
-        height: parent.height/2;
-        width: parent.width;
-        Rectangle {
-            id: rectHeader
-            height: parent.height;
-            width: parent.width;
-            color: "lightblue";
-            Image {
-                id: icoLamp
-                source: "qrc:/images/light_type_2_off.png"
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        console.log("rectIcon onClicked");
-                    }
+        height: parent.height
+        width: parent.width
+        color: "lightblue"
+        Grid {
+            id: listRGB
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: parent.top
+                topMargin: 20
+            }
+            columns: 1
+            Rectangle {
+                id: rectValue
+                height: 40
+                width: 80
+                border.color: "#FFD600"
+                border.width: 0.5
+                radius: 5
+                Label {
+                    id: lblValue
+                    anchors.centerIn: parent
+                    color: "#FFD600"
+                    text: "0"
+                }
+            }
+        }
+        Item {
+            id: squareSV
+            width: 300
+            height: 300
+            anchors.centerIn: parent
+
+            Rectangle {
+                anchors.fill: parent;
+                rotation: -90
+                gradient: Gradient {
+                    GradientStop {position: 0.0; color: "white"}
+                    GradientStop {position: 1.0; color: "black"}
                 }
             }
 
-            Text {
-                id: txtVoltage
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 5
-                text: qsTr("Voltage")
-                font.pixelSize: 10
-            }
-            Text {
-                id: txtVoltageValue
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottom: txtVoltage.top
-                text: qsTr("0W")
-                font.pixelSize: 20
-                color: "red"
-                opacity: 0.8
+//            Rectangle {
+//                anchors.fill: parent
+//                gradient: Gradient {
+//                    GradientStop {position: 1.0; color: "#00000000"}
+//                    GradientStop {position: 0.0; color: "#F1F8E9"}
+//                }
+//            }
+
+            // Saturation/Value picker - dau cham ben trong
+            Item {
+                id: pickerSV
+                x: s * parent.width
+                y: (1 - v) * parent.height
+                property int radiusPickerSV: 5
+
+                Rectangle {
+                    x: -parent.radiusPickerSV
+                    y: -parent.radiusPickerSV
+                    width: parent.radiusPickerSV * 5
+                    height: parent.radiusPickerSV * 5
+                    radius: parent.radiusPickerSV*5
+                    border.color: (pickerSV.x > squareSV.width / 2) || (pickerSV.y > squareSV.height / 2) ? "white" : "black"
+                    border.width: 2
+                    color: "transparent"
+                    antialiasing: true
+                }
             }
 
             MouseArea {
                 anchors.fill: parent
-                onPressed: {
-                    console.log("PRESSED")
-                    rectHeader.state = "PRESSED"
-                    header.state = "PRESSED"
-                    rectController.state = "PRESSED"
+                function handleMouseSV(mouse) {
+                    if (mouse.buttons & Qt.LeftButton) {
+                        s = Math.max(0, Math.min(width, mouse.x)) / parent.width
+                        v = 1 - Math.max(0, Math.min(height, mouse.y)) / parent.height
+                        color1 = Utils.hsvToHsl(h, s, v, 1)
+                        lblValue.text = (color1.r*255).toFixed(0)
+                        changeColor(color1)
+
+                    }
                 }
-                onReleased: {
-                    console.log("RELEASED")
-                    rectController.state = "RELEASED"
-                    rectHeader.state = "RELEASED"
-                    header.state = "RELEASED"
-                }
+                onPositionChanged: handleMouseSV(mouse)
+                onPressed: handleMouseSV(mouse)
+                onReleased: mouseRelease()
             }
-            states: [
-                State {
-                    name: "PRESSED"
-                    PropertyChanges { target: header; color: "lightsteelblue"}
-                    PropertyChanges { target: rectHeader; color: "lightsteelblue"}
-                    PropertyChanges { target: rectController; color: "#F5F5F5"}
-                },
-                State {
-                    name: "RELEASED"
-                    PropertyChanges { target: header; color: "lightblue"}
-                    PropertyChanges { target: rectHeader; color: "lightblue"}
-                    PropertyChanges { target: rectController; color: "white"}
-                }
-            ]
-            transitions: [
-                Transition {
-                    from: "PRESSED"
-                    to: "RELEASED"
-                    ColorAnimation { target: header; duration: 500}
-                    ColorAnimation { target: rectHeader; duration: 500}
-                    ColorAnimation { target: rectController; duration: 500}
-                },
-                Transition {
-                    from: "RELEASED"
-                    to: "PRESSED"
-                    ColorAnimation { target: header; duration: 500}
-                    ColorAnimation { target: rectHeader; duration: 500}
-                    ColorAnimation { target: rectController; duration: 500}
-                }
-            ]
         }
     }
 
-    Rectangle {
-        id: rectController
-        width: parent.width
-        height: parent.height/2
-        anchors.top: rectIcon.bottom
-//        Image {
-//            id: icPower
-//            source: "qrc:/images/ic_power.png"
-//            anchors.horizontalCenter: parent.horizontalCenter
-//            anchors.verticalCenter: parent.verticalCenter
-//            MouseArea {
-//                anchors.fill: parent
-//                onClicked: {
-//                    if(_action === 0) {
-//                        _action = 1;
-//                        icoLamp.source = "qrc:/images/light_type_2_on.png"
-//                    }
-//                    else {
-//                        _action = 0;
-//                        icoLamp.source = "qrc:/images/light_type_2_off.png"
-//                    }
-//                    deviceController.controlDevice(_deviceId, _deviceaddress, _action);
-//                }
-//                onPressed: {
-//                    rectController.color = "#CFD8DC";
-//                }
-//                onReleased: {
-//                    rectController.color = "white";
-//                }
-//            }
-//        }
-        Rectangle {
-            height: 40
-            width: 80
-            radius: 5
-            border.color: "#EFEBE9"
-            border.width: 0.5
-            anchors {
-                top: parent.top
-                topMargin: 20
-                horizontalCenter: parent.horizontalCenter
-            }
-            Text {
-                id: txtValueSlider
-                text: (sliderChangeValue.value).toFixed(0)
-                anchors {
-                    centerIn: parent
-                }
-            }
-        }       
 
 
-        Slider {
-            id: sliderChangeValue
-            width: rectController.width - 100
-            height: 50
-            from: 0
-            to: 255
-            anchors.centerIn: parent
+    Label {
+        id: lblVoltage
+        text: "Voltage: 0W"
+        color: "red"
+        anchors {
+            bottom: parent.bottom
+            horizontalCenter: parent.horizontalCenter
         }
     }
 }

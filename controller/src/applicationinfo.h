@@ -8,6 +8,7 @@ namespace DB {
 class UPDatabase;
 }
 
+class CommonManager;
 class DeviceManager;
 class GroupManager;
 class DeviceCalendarManager;
@@ -27,6 +28,7 @@ public:
     void start(const QString &qmlFile);
 
     DB::UPDatabase *applicationDB() const;
+    CommonManager* commonManager() const;
     DeviceManager* deviceManager() const;
     GroupManager* groupManager() const;
     DeviceCalendarManager* deviceCalendarManager() const;

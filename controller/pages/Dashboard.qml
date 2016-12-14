@@ -27,6 +27,7 @@ Page {
     property var _opacity: 1.1
     property var _groupname: ""
     property var _groupid: -1
+    property var _grouptype: -1
 
     Settings {
         id: settings
@@ -390,14 +391,12 @@ Page {
 
                        onPressAndHold: {
                            console.log("onPressAndHold Turn on")
-                           if(groupType === 1) {
-                               popupWarning.open();
-                           }
-                           else {
-                               _groupname = groupName;
-                               _groupid = groupId;
-                               popupDeleteGroup.open();
-                           }
+
+                           _grouptype = groupType;
+                           _groupname = groupName;
+                           _groupid = groupId;
+                           popupActionGroup.open();
+
                            icon.color = "white"
                        }
                     }
@@ -519,11 +518,11 @@ Page {
 
 
     Popup {
-        id: popupDeleteGroup
+        id: popupActionGroup
         x: 0
         y: parent.height - height
         width: parent.width
-        height: 160
+        height: 230
         modal: true
         focus: true
 
@@ -546,7 +545,7 @@ Page {
             }
 
             Rectangle {
-                id: rectDeleteOK
+                id: rectController
                 width: parent.width
                 height: 50
                 radius: 50
@@ -554,6 +553,37 @@ Page {
                 border.width: 1
                 anchors {
                     top: txtTitleDeleteGroup.bottom
+                    topMargin: 10
+                }
+
+
+                Text {
+                    id: btnController
+                    anchors {
+                        centerIn: parent
+                    }
+                    text: qsTr("Control")
+                    font.pixelSize: 12
+                    color: "gray"
+                }
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        stackView.push("qrc:/pages/ControlGroupType2.qml", {_groupId: _groupid, _groupName: _groupname});
+                        popupActionGroup.close();
+                    }
+                }
+            }
+
+            Rectangle {
+                id: rectDeleteOK
+                width: parent.width
+                height: 50
+                radius: 50
+                border.color: "#EEEEEE"
+                border.width: 1
+                anchors {
+                    top: rectController.bottom
                     topMargin: 10
                 }
 
@@ -570,9 +600,16 @@ Page {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        groupController.deleteGroup(_groupid, _groupname);
-                        popupFinishDelete.open();
-                        popupDeleteGroup.close();
+                        if(_grouptype === 1) {
+                            //root
+                            popupActionGroup.close();
+                            popupWarning.open();
+                        }
+                        else {
+                            groupController.deleteGroup(_groupid, _groupname);
+                            popupFinishDelete.open();
+                            popupActionGroup.close();
+                        }
                     }
                 }
             }
@@ -602,7 +639,7 @@ Page {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        popupDeleteGroup.close();
+                        popupActionGroup.close();
                     }
                 }
             }

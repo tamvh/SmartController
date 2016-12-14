@@ -17,6 +17,8 @@
 #include "src/app_commons.h"
 #include "src/datamodel/devicedatamodel.h"
 #include "src/model/zdevice.h"
+#include "src/model/zvalue.h"
+#include "src/manager/commonmanager.h"
 #include "src/manager/devicemanager.h"
 #include "src/manager/devicemanager.h"
 #include "src/manager/http/httpclient.h"
@@ -25,6 +27,7 @@
 class DeviceController::Impl {
 public:
     ZListDataModel* listDevice;
+    CommonManager* commonManager;
     DeviceManager* deviceManager;
     HttpClient* httpClient;
 };
@@ -39,6 +42,8 @@ DeviceController::DeviceController(QObject *parent)
     d_ptr->deviceManager->initialize();
     d_ptr->httpClient = GlobalHandle::httpClient();
     d_ptr->httpClient->initialize(Configuration::hostServer, Configuration::portServer);
+    d_ptr->commonManager = GlobalHandle::commonManager();
+    d_ptr->commonManager->initialize();
 }
 int DeviceController::addDevice(const QString& remoteAddress,
                                 const QString& deviceName,
@@ -71,6 +76,9 @@ int DeviceController::addDevice(const QString& remoteAddress,
     }
     else if(deviceType == 5) {
         deviceAvatar = "qrc:/images/dimmer3.png";
+    }
+    else if(deviceType == 6) {
+        deviceAvatar = "qrc:/images/smartplug.png";
     }
 
     ZDevice itemDevice;
@@ -109,17 +117,64 @@ void DeviceController::addPostItem(const QString &key, const QString &value)
     m_postData.append("\"" + value + "\"");
 }
 
-int DeviceController::controlDevice(int deviceId, const QString& remoteAddress, int action) {
-    qDebug() << "start DELETE device, deviceId: " + QString::number(deviceId) +
+int DeviceController::controlDeviceSimpleLight(
+        int deviceId,
+        const QString& remoteAddress,
+        int command,
+        int value
+       ) {
+    qDebug() << "start CONTROL device, deviceId: " + QString::number(deviceId) +
                 ", remoteAddress: " + remoteAddress +
-                ", action: " + QString::number(action);
-    QString api = "control";
+                ", command: " + QString::number(command);
+//    QString api = "control";
+//    d_ptr->httpClient->setRequestMethod(HttpRequestMethod::POST);
+//    addPostItem("address", remoteAddress);
+//    addPostItem("id", QString::number(deviceId));
+//    addPostItem("control", QString::number(action));
+//    d_ptr->httpClient->sendRequest(api, m_postData);
+    ZValue zvalue;
+    QString password = "";
+    int securityNumber = 0; // tang dan
+    try {
+        zvalue = d_ptr->commonManager->getValue("skey");
+        password = zvalue.getValue();
+        zvalue = d_ptr->commonManager->getValue("securityNumber");
+        securityNumber = zvalue.getValue().toInt() + 1;
+        QAndroidJniObject objectSecurityNumber = QAndroidJniObject::fromString(QString::number(securityNumber));
+        QAndroidJniObject objectPassword = QAndroidJniObject::fromString(password);
+        QAndroidJniObject objectCommand = QAndroidJniObject::fromString(QString::number(command));
+        QAndroidJniObject objectValue = QAndroidJniObject::fromString(QString::number(value));
+        QAndroidJniObject objectDirection = QAndroidJniObject::fromString("0x31"); //phone
+        QAndroidJniObject objectSlave = QAndroidJniObject::fromString(remoteAddress); //adress(slave)
 
-    d_ptr->httpClient->setRequestMethod(HttpRequestMethod::POST);
-    addPostItem("address", remoteAddress);
-    addPostItem("id", QString::number(deviceId));
-    addPostItem("control", QString::number(action));
-    d_ptr->httpClient->sendRequest(api, m_postData);
+
+        QAndroidJniObject::callStaticMethod<jint>(
+                    "org/qtproject/lamp/MainActivity",
+                    "onStartAdvertising",
+                    "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I",
+                    objectSecurityNumber.object<jstring>(),
+                    objectPassword.object<jstring>(),
+                    objectCommand.object<jstring>(),
+                    objectValue.object<jstring>(),
+                    objectDirection.object<jstring>(),
+                    objectSlave.object<jstring>());
+
+        //update security number
+        qDebug() << "key: " + zvalue.getKey() + ", id: " + QString::number(zvalue.getId());
+        zvalue.setKey("securityNumber");
+        zvalue.setValue(QString::number(securityNumber));
+        int result = d_ptr->commonManager->insertValue(zvalue);
+        if(result < 0) {
+            qDebug() << "insert faile";
+        }
+        else
+        {
+            qDebug() << "insert success";
+        }
+    } catch (const std::bad_alloc &) {
+        qDebug() << "Exception";
+        return 0;
+    }
     return 0;
 }
 

@@ -15,6 +15,10 @@ QString getCurrentUserSession() {
     return "";
 }
 
+CommonManager *GlobalHandle::commonManager() {
+    return ApplicationInfo::instance()->commonManager();
+}
+
 DeviceManager *GlobalHandle::deviceManager() {
     return ApplicationInfo::instance()->deviceManager();
 }

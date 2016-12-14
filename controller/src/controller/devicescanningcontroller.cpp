@@ -67,7 +67,7 @@ void DeviceScanningController::selectDevice(const QString& remoteAddress) {
             ZDevice device(-1);
             device.setDeviceName(deviceName);
             device.setRemoteAddress(remoteAddress);
-            device.setDeviceType(ZDeviceType::BLEPlug);
+            device.setDeviceType(ZDeviceType::CeilingLamp);
             GlobalHandle::deviceManager()->addDevice(device);
             return;
         }

@@ -14,7 +14,11 @@ class DeviceController : public QObject
 public:
     explicit DeviceController(QObject *parent = 0);
 public slots:
-    Q_INVOKABLE int controlDevice(int deviceId, const QString& remoteAddress, int action);
+    Q_INVOKABLE int controlDeviceSimpleLight(
+            int deviceId,
+            const QString& remoteAddress,
+            int command,
+            int value);
     Q_INVOKABLE int deleteDevice(int deviceId, const QString& remoteAddress);
     Q_INVOKABLE int addDevice(const QString& remoteAddress,
                               const QString& deviceName,

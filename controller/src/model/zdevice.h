@@ -7,11 +7,12 @@
 #include <QString>
 
 enum class ZDeviceType {
-    BLEPlug = 1,
-    Simple = 2,
-    Dimmer1 = 3,
-    Dimmer2 = 4,
-    Dimmer3 = 5
+    CeilingLamp = 1,
+    SimpleOnOff = 2,
+    Dimmer1Color = 3,
+    DimmerCoolWarm = 4,
+    DimmerRGB = 5,
+    SmartPlug = 6
 };
 
 //! Data structure for a device

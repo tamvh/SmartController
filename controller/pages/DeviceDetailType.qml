@@ -9,7 +9,7 @@ import QtGraphicalEffects 1.0
 import SmartControls 1.0
 import "Common.js" as Global
 Page {
-    id: pageDeviceDetailType3
+    id: pageDeviceDetailType
     title: "Device Detail"
     property var _deviceId: ""
     property var _deviceName: ""

@@ -22,6 +22,8 @@ import android.widget.Toast;
 import android.app.Notification;
 import android.app.NotificationManager;
 
+import java.io.Console;
+import java.lang.reflect.Array;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -117,7 +119,7 @@ public class AdvertiserService extends Service {
                 }
             }
         } catch (Exception ex) {
-            Log.d(TAG, "ex: " + ex.getMessage());
+            Log.d(TAG, "ex initialize: " + ex.getMessage());
         }
     }
 
@@ -138,7 +140,7 @@ public class AdvertiserService extends Service {
             };
             mHandler.postDelayed(timeoutRunnable, TIMEOUT);
         } catch (Exception ex) {
-            Log.d(TAG, "ex: " + ex.getMessage());
+            Log.d(TAG, "ex setTimeout: " + ex.getMessage());
         }
     }
 
@@ -161,9 +163,8 @@ public class AdvertiserService extends Service {
                 }
             }
         } catch (Exception ex) {
-            Log.d(TAG, "ex: " + ex.getMessage());
+            Log.d(TAG, "ex startAdvertising: " + ex.getMessage());
         }
-
     }
 
     /**
@@ -178,7 +179,7 @@ public class AdvertiserService extends Service {
                 mAdvertiseCallback = null;
             }
         } catch (Exception ex) {
-            Log.d(TAG, "ex: " + ex.getMessage());
+            Log.d(TAG, "ex stopAdvertising: " + ex.getMessage());
         }
     }
 
@@ -196,35 +197,78 @@ public class AdvertiserService extends Service {
          *  AdvertiseCallback.ADVERTISE_FAILED_DATA_TOO_LARGE. Catch this error in the
          *  onStartFailure() method of an AdvertiseCallback implementation.
          */
+        Log.e(TAG, "pass: " + String.valueOf(Common.hex2decimal(MainActivity.arr_password[0])));
+        Log.e(TAG, "pass: " + String.valueOf(Common.hex2decimal(MainActivity.arr_password[1])));
+        Log.e(TAG, "slave: " + String.valueOf(Common.hex2decimal(MainActivity.arr_slave[0])));
+        Log.e(TAG, "slave: " + String.valueOf(Common.hex2decimal(MainActivity.arr_slave[1])));
+        Log.e(TAG, "slave: " + String.valueOf(Common.hex2decimal(MainActivity.arr_slave[2])));
+        Log.e(TAG, "slave: " + String.valueOf(Common.hex2decimal(MainActivity.arr_slave[3])));
 
-        byte[] arvalue = new byte[23];
+        byte[] arvalue = new byte[24];
 
-//        arvalue[0] = (byte) BroadcastSend.slave; //Security number
-        arvalue[0] = (byte) 0x00;
-        arvalue[1] = (byte) 0x00;
-        arvalue[2] = (byte) 0x00; //Password
-        arvalue[3] = (byte) 0x00;
-        arvalue[4] = (byte) 0x00; //Direction and Protocol Version
-        arvalue[5] = (byte) 0x00; //ID Master
-        arvalue[6] = (byte) 0x00;
-        arvalue[7] = (byte) 0x00;
-        arvalue[8] = (byte) 0x00;
-        arvalue[9] = (byte) 0x00; //ID Slave
-        arvalue[10] = (byte) 0x00;
-        arvalue[11] = (byte) 0x00;
-        arvalue[12] = (byte) 0x00;
-        arvalue[13] = (byte) 0x00; //Command
-        arvalue[14] = (byte) 0x00; //Data Lengthy
-        arvalue[15] = (byte) 0x00; //value
-        arvalue[16] = (byte) 0X00;
+        arvalue[0] = (byte) Common.hex2decimal(MainActivity.arr_password[0]); //Password.
+        arvalue[1] = (byte) Common.hex2decimal(MainActivity.arr_password[1]);
+
+        arvalue[2] = (byte) 0x31; //Direction and Protocol Version (0x31: Phone)
+
+        arvalue[3] = (byte) 0x11; //ID Master
+        arvalue[4] = (byte) 0x22;
+        arvalue[5] = (byte) 0x33;
+        arvalue[6] = (byte) 0x44;
+
+        arvalue[7] = (byte) Common.hex2decimal(MainActivity.arr_slave[0]); //ID Slave
+        arvalue[8] = (byte) Common.hex2decimal(MainActivity.arr_slave[1]);
+        arvalue[9] = (byte) Common.hex2decimal(MainActivity.arr_slave[2]);
+        arvalue[10] = (byte) Common.hex2decimal(MainActivity.arr_slave[3]);
+
+        arvalue[11] = MainActivity.arr_cmd[0]; //Command
+        arvalue[12] = MainActivity.arr_cmd[1];
+
+        arvalue[13] = (byte) Common.hex2decimal(MainActivity.s_value); //Value
+        arvalue[14] = (byte) 0x00;
+        arvalue[15] = (byte) 0x00;
+        arvalue[16] = (byte) 0x00;
         arvalue[17] = (byte) 0x00;
         arvalue[18] = (byte) 0x00;
-        arvalue[19] = (byte) 0x40;
-        arvalue[20] = (byte) 0x30;
-        arvalue[21] = (byte) 0x20;
-        arvalue[22] = (byte) 0x10;
+        arvalue[19] = (byte) 0x00;
+        arvalue[20] = (byte) 0x00;
+        arvalue[21] = (byte) 0x00;
+        arvalue[22] = (byte) 0x00;
+        arvalue[23] = (byte) 0x00;
+
+//        arvalue[0] = (byte) 0x02;
+//        arvalue[1] = (byte) 0x15;
+//
+//        arvalue[2] = (byte) Common.hex2decimal(MainActivity.arr_password[0]); //Password
+//        arvalue[3] = (byte) Common.hex2decimal(MainActivity.arr_password[1]);
+//
+//        arvalue[4] = (byte) 0x31; //Direction and Protocol Version (0x31: Phone)
+//
+//        arvalue[5] = (byte) 0x11; //ID Master
+//        arvalue[6] = (byte) 0x22;
+//        arvalue[7] = (byte) 0x33;
+//        arvalue[8] = (byte) 0x44;
+//
+//        arvalue[9] = (byte) Common.hex2decimal(MainActivity.arr_slave[0]); //ID Slave
+//        arvalue[10] = (byte) Common.hex2decimal(MainActivity.arr_slave[1]);
+//        arvalue[11] = (byte) Common.hex2decimal(MainActivity.arr_slave[2]);
+//        arvalue[12] = (byte) Common.hex2decimal(MainActivity.arr_slave[3]);
+//
+//        arvalue[13] = MainActivity.arr_cmd[0]; //Command
+//        arvalue[14] = MainActivity.arr_cmd[1];
+//
+//        arvalue[15] = (byte) Common.hex2decimal(MainActivity.s_value); //Value
+//        arvalue[16] = MainActivity.arr_cmd[2];
+//        arvalue[17] = MainActivity.arr_cmd[3];
+//        arvalue[18] = (byte) 0x00;
+//        arvalue[19] = (byte) 0x00;
+//        arvalue[20] = (byte) 0x00;
+//        arvalue[21] = (byte) 0x00;
+//        arvalue[22] = (byte) 0x00;
+//        arvalue[23] = (byte) 0x00;
+
         AdvertiseData.Builder dataBuilder = new AdvertiseData.Builder();
-        dataBuilder.addManufacturerData(0, arvalue);
+        dataBuilder.addManufacturerData(Integer.parseInt(MainActivity.s_number), arvalue);
 
         return dataBuilder.build();
     }
@@ -238,9 +282,10 @@ public class AdvertiserService extends Service {
         AdvertiseSettings.Builder settingsBuilder = new AdvertiseSettings.Builder();
         try {
             settingsBuilder.setAdvertiseMode(AdvertiseSettings.ADVERTISE_MODE_LOW_POWER);
-            settingsBuilder.wait(100);
+//            settingsBuilder.setConnectable(false);
+//            settingsBuilder.wait(100);
         } catch (Exception ex) {
-            Log.d(TAG, "ex: " + ex.getMessage());
+            Log.d(TAG, "ex buildAdvertiseSettings: " + ex.getMessage());
         }
         return settingsBuilder.build();
     }

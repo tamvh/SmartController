@@ -6,14 +6,22 @@ import QtQuick.Controls.Material 2.0
 import QtQuick.Controls.Universal 2.0
 import QtQml.Models 2.1
 import Qt.labs.settings 1.0
+import SmartControls 1.0
 
 Page {
     id: pageSecurityKey
-    property string _suggestSetSecurityKey: "Để set security key, bạn bấm nút \"Set Security Key\" phía dưới"
     title: "Security Key"
+
+    property var zkey: "skey"
+    property var zvalue: ""
+
     Settings {
         id: settings
         property string style: "Universal"
+    }
+
+    InitController {
+        id: initController
     }
 
     header:ToolBar {
@@ -59,15 +67,28 @@ Page {
 
         Text {
             id: txtView
-            anchors.top: parent.top
-            anchors.topMargin: 20
-            height: 40
+            height: 80
             width: Screen.width
-            text: qsTr("")
+            text: initController.getValue(zkey)
             font.pixelSize: 20
             color: "gray"
-            horizontalAlignment: Text.AlignHCenter
-
+            horizontalAlignment: Qt.AlignHCenter
+            verticalAlignment: Qt.AlignVCenter
+            Image {
+                id: imgDeleteCharacter
+                source: "qrc:/images/delete.png"
+                anchors {
+                    right: parent.right
+                    rightMargin: 10
+                    verticalCenter: parent.verticalCenter
+                }
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        txtView.text = ""
+                    }
+                }
+            }
         }
         GridView {
             anchors {
@@ -75,7 +96,7 @@ Page {
             }
             id: root
             width: Screen.width; height: Screen.height
-            cellWidth: Screen.width/4; cellHeight: Screen.width/8
+            cellWidth: Screen.width/4; cellHeight: Screen.width/7
             clip: true
             displaced: Transition {
                 NumberAnimation { properties: "x,y"; easing.type: Easing.OutQuad }
@@ -101,19 +122,18 @@ Page {
                     ListElement { color: "#FFF"; keyname: "7"; }
                     ListElement { color: "#FFF"; keyname: "8"; }
                     ListElement { color: "#FFF"; keyname: "9"; }
-                    ListElement { color: "#FFF"; keyname: "DEL"; }
                 }
                 delegate: MouseArea {
                     id: delegateRoot
 
                     property int visualIndex: DelegateModel.itemsIndex
 
-                    width: Screen.width/4; height: Screen.width/8
+                    width: Screen.width/4; height: Screen.width/7
                     drag.target: icon
 
                     Rectangle {
                         id: icon
-                        width: Screen.width/4; height: Screen.width/8
+                        width: Screen.width/4; height: Screen.width/7
                         anchors {
                             left: parent.left
                             leftMargin: 5
@@ -136,35 +156,30 @@ Page {
                     }
 
                     MouseArea {
-                           anchors.fill: parent
-                           onClicked: {
-                                icon.color = "#FFF"
+                       anchors.fill: parent
+                       onClicked: {
+                            icon.color = "#FFF"
 
-                           }
-                           onPressed: {
-                                icon.color = "gray"
-                                if(model.keyname != "DEL")
-                                {
-                                    if(txtView.text.length < 5){
-                                        txtView.text += model.keyname
-                                        if(txtView.text.length == 2){
-                                            txtView.text += "-"
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    txtView.text = ""
-                                }
-                           }
                        }
+                       onPressed: {
+                            icon.color = "gray"
+
+                            if(txtView.text.length < 5){
+                                txtView.text += model.keyname
+                                if(txtView.text.length == 2){
+                                    txtView.text += "-"
+                                }
+                            }
+
+                        }
+                    }
                 }
             }
-        }
+        }        
     }
 
     Button {
-        id: scanButton
+        id: btnSetKeys
         height: 50
 
         anchors {
@@ -177,11 +192,12 @@ Page {
         }
 
         onClicked: {
-            console.log("onClicked Turn on")
-
+            console.log("onClicked Set Key")
+            zvalue = txtView.text
+            initController.setValue(zkey, zvalue)
         }
         Image {
-            id: icon1
+            id: iconKey
             width: 30
             height: 30
             anchors {
@@ -193,7 +209,7 @@ Page {
         }
         Text {
             id: buttonTitle
-            text: "SET SECURITY KEY"
+            text: "Set Key"
             font.family: "Helvetica"
             font.pointSize: 16
             verticalAlignment: Text.AlignVCenter

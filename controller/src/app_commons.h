@@ -5,6 +5,7 @@ namespace DB {
 class UPDatabase;
 }
 
+class CommonManager;
 class DeviceManager;
 class GroupManager;
 class DeviceCalendarManager;
@@ -15,6 +16,7 @@ class HttpClient;
 class GlobalHandle {
 public:
     static DB::UPDatabase *getApplicationDB();
+    static CommonManager* commonManager();
     static DeviceManager* deviceManager();
     static GroupManager* groupManager();
     static DeviceCalendarManager* deviceCalendarManager();
